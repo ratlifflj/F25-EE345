@@ -1,0 +1,9 @@
+site_name: EE345
+site_url: https://ratlifflj.github.io/F25-EE345/
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Syllabus: syllabus.md
+  - Schedule: schedule.md
+repo_url: https://github.com/ratlifflj/F25-EE345
