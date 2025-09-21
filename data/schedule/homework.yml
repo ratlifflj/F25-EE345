@@ -7,9 +7,9 @@ schedule:
   homeworks:
     default_type: homework
     entries:
-      - title: ODEs and Stability (Due 1/16)
-        start: 2022-1-10
-        end: 2022-1-16
+      - title: Homework 1
+        start: 2025-9-23
+        end: 2025-9-30
         url: 
 
       

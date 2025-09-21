@@ -1,6 +1,8 @@
 from datetime import datetime
 
 import jinja2
+from jinja2 import pass_context
+from markupsafe import Markup
 from dateutil import rrule
 from markdown import Markdown
 
@@ -24,7 +26,7 @@ def define_env(env):
             extensions=env.conf['markdown_extensions'],
             extension_configs=env.conf['mdx_configs'] or {}
         )
-        return jinja2.Markup(md.convert(text))
+        return Markup(md.convert(text))
     # env.filters["markdown"] = env.conf["plugins"]["markdown-filter"].md_filter
 
     @env.macro
@@ -58,7 +60,9 @@ def define_env(env):
         rs.rrule(r_dummy)
         return iter(rs)
 
-    env.variables.update(env.conf['plugins']['collections'].collections)
+    # Only update collections if the plugin is present
+    if 'collections' in env.conf['plugins']:
+        env.variables.update(env.conf['plugins']['collections'].collections)
 
     @env.macro
     def deep_get(d, *args, default=None):
@@ -82,7 +86,7 @@ def define_env(env):
 
 
     @env.filter
-    @jinja2.contextfilter
+    @pass_context
     def url(context, value):
         """ A Template filter to normalize URLs. """
         # exclude page parameter; template urls are always relative to site root (site_dir)

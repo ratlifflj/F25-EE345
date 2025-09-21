@@ -1,0 +1,2 @@
+git+https://gitlab.com/briankchan/markdown-katex.git@00981483ae37f1d6a2e056ad5e882332c19c8d31#egg=markdown-katex # markdown-katex==v202006.1021
+mkdocs-append-to-pages-plugin

@@ -5,7 +5,7 @@ schedule:
     section:
       resources:
         resources:
-          zoomlink: https://washington.zoom.us/j/96692114896
+          zoomlink: TBA
   styles:
     resources:
       worksheet:
@@ -15,22 +15,25 @@ schedule:
           - btn
           - btn-resource
   sections:
-    days: ["Tue", "Thu"]
+    days: ["Fri"]
     default_type: section
     entries:
-      - title: Course Overview
-        resources:
-          resources:
-            recorded sec: "to be provided"
-            zoom: https://washington.zoom.us/j/96692114896
-            self-grade guide: /homework/SelfGradeGuide.pdf
-      - title: Solutions to ODEs
+      - title: None
         resources:
           worksheet:
-            blank: /sections/section01.pdf
-            solution: /sections/section01-solutions.pdf
+            blank: TBA
+            solution: TBA
           resources:
-            recorded sec: "to be provided"
-            zoom: https://washington.zoom.us/j/96692114896
+            recorded sec: TBA
+            zoom: TBA
+            self-grade guide: /homework/SelfGradeGuide.pdf
+      - title: Course Overview & Data Fitting
+        resources:
+          worksheet:
+            blank: TBA
+            solution: TBA
+          resources:
+            recorded sec: TBA
+            zoom: TBA
             self-grade guide: /homework/SelfGradeGuide.pdf
 

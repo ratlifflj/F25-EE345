@@ -1,12 +1,12 @@
 schedule:
-  start: 2022-1-03 # Shared across all schedule files
+  start: 2025-9-23 # Shared across all schedule files
   start_indices:
     lecture: 1
   defaults:
     lecture:
       resources: # Links always relative to schedule's page
         slides:
-          pdf: /lectures/{num}.pdf
+          pdf: /lectures/F25EE345_Lecture_{num}.pdf
   styles:
     resources:
       slides:
@@ -17,117 +17,15 @@ schedule:
           - btn-resource
 
   lectures:
-    days: ["Tue", "Thu"]
+    days: ["Mon", "Wed"]
     default_type: lecture
     entries:
       # 1
       - title: "Welcome!"
         resources:
           resources:
-            510Notes: http://faculty.washington.edu/ratliffl/teaching/2020_MathematicalFoundations.pdf
+            Notes: TBA
       # 2
-      - title: "Module 1: Solutions to ODEs"
-        resources:
-          resources:
-            M1-RL1: https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aa491bcd-b994-462e-9a5a-adfc0136d317
-            510Matrixexp: /lectures/0.pdf
-
-      # 3
-      - title: "Module 1: Solutions to ODEs"
-        resources:
-          resources:
-            M1-RL2: https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3dcb897c-641a-4bb8-bd90-ae02017d153b
-       # 4
-      - title: "Module 2: Linear System Stability"
-        resources:
-          resources:
-            M2-RL1: https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e0ffdcaf-19ee-40aa-8b68-ae06014e6a9e
-
-      # 5
-      - title: "Module 2: Linear System Stability"
-        resources:
-          resources:
-            M2-RL2:
-
-      # 6
-      - title: "Module 2: Linear System Stability"
-        resources:
-          resources:
-            M2-RL3:
-
-      # 7
-      - title: "Module 3: Observability & Controllability"
-        resources:
-          resources:
-            M3-RL1:
-
-      # 8
-      - title: "Module 3: Observability & Controllability"
-        resources:
-          resources:
-            M3-RL2:
-
-      # 9
-      - title: "Module 3: Observability & Controllability"
-        resources:
-          resources:
-            M3-RL3:
-
-      # 10
-      - title: "Module 3: Observability & Controllability"
-        resources:
-          resources:
-            M3-RL3:
-
-
-      # 11
-      - title: "Module 4: Linear Quadratic Regulator"
-        resources:
-          resources:
-            M4-RL1:
-
-      # 12
-      - title: "Module 4: Linear Quadratic Regulator"
-        resources:
-          resources:
-            M4-RL2:
-
-      # 13
-      - title: "Module 4: Linear Quadratic Regulator"
-        resources:
-          resources:
-            M4-RL3:
-
-      # 14
-      - title: "Martin Luther King Day"
-        type: holiday
-
-      # 15
-      - title: "Module 4: Linear Quadratic Regulator"
-        resources:
-          resources:
-            M4-RL3:
-
-      # 16
-      - title: "Module 5: Introduction to Stochastic Linear Systems"
-        resources:
-          resources:
-            M5-RL1:
-
-      # 17
-      - title: "Module 5: Introduction to Stochastic Linear Systems"
-        resources:
-          resources:
-            M5-RL1:
-
-      # 18
-      - title: "Module 5: Introduction to Stochastic Linear Systems"
-        resources:
-          resources:
-            M5-RL1:
-
-
-
 
 
 

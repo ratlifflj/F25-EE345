@@ -6,6 +6,7 @@ from urllib.parse import unquote as urlunquote
 from urllib.parse import urlparse, urlunparse
 
 import jinja2
+from jinja2 import pass_context
 import mkdocs
 from markdown import Extension
 from markdown.treeprocessors import Treeprocessor
@@ -42,14 +43,14 @@ class MoreUrlValidationPlugin(mkdocs.plugins.BasePlugin):
     def on_env(self, env, config, files):
         self.file_data["files"] = files
 
-        @jinja2.contextfilter
+        @pass_context
         def better_url_filter(context, value):
             """ A Template filter to normalize URLs. """
             # exclude page parameter; template urls are always relative to site root (site_dir)
             return normalize_url(value, files, page=context['page'], site_url=config['site_url'],
                                  treat_relative_as_absolute=True)[0]
 
-        @jinja2.contextfilter
+        @pass_context
         def no_validation_url_filter(context, value):
             """ A Template filter to normalize URLs. """
             # exclude page parameter; template urls are always relative to site root (site_dir)

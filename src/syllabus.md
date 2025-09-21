@@ -6,18 +6,13 @@ description: >-
 ---
 
 !!! info
-    Not registered for the course, but interested in following along? Check out the [materials we provide publicly](https://ratlifflj.github.io/W22-547/public).
+    Not registered for the course, but interested in following along? Check out the [materials we provide publicly](https://ratlifflj.github.io/F25-EE345/).
 
 ## Goals
 
-This focus of this course is the use of linearity in systems theory. It provides foundational tools for modeling and control and serves as a prerequisite for more advanced courses in control theory, robotics, and optimization. The class will be mathematically rigorous, and builds upon concepts familiar from linear algebra (510), ordinary differential equations, and feedback control. In addition to analytical results, we will see computational tools and illustrate abstract concepts whenever possible using numerical examples.
+This course provides an introduction to the mathematical foundations of machine learning models and algorithms. Motivation and examples are derived from application areas including statistics, decision-making and control, communication and signal processing, and data science. Topics include linear algebra for data science, supervised learning methods such as linear regression and classification, and unsupervised learning methods such as clustering. The course will also cover practice-driven challenges in machine learning, why strong foundational knowledge is critical, and how to address those challenges using such knowledge. Students will also be exposed to some techniques for the operations of machine learning, an integral component of machine learning use in practice. 
 
-By the end of this course, you will be able to:
-  - construct and simulate linear control system models for physical phenomena;
-  - approximate nonlinear control system models using linear control systems;
-  - assess stability, controllability, and observability of linear control systems;
-  - design and implement a stabilizing controller + observer for linear systems.
-
+This course is the pre-req for EE445 (Foundations of Machine Learning and Optimization). 
 **This course syllabus is a living document.** 
   - All course materials will be posted on the course website. 
   - We will only use canvas for announcements, submitting homework and self-grades. 
@@ -26,22 +21,20 @@ By the end of this course, you will be able to:
 Specific topics we will cover include:
 
 
-**Prerequisite**: EE/AA 510. **This is a hard requirement**. We will build off of
-where 510 left off, and it iwll be difficult to keep up and solve homework
-problems (a
-big part of the grade) if you have not mastered that material.
+**Prerequisite**: Python (EE241/CSE163); Calculus Sequence
 
 ## Course Components
 
 ### Grade Breakdown
 
-Your percentage grade in this course will be weighted using these categories:
+Your percentage grade in this course will be weighted using the following categories:
 
 | Category                                 | Weight |
 |-----------------------------------------|-------|
-| Homework                                | 30% |
-| Take Home Exam                          | 30% |
-| Final Project                           | 30% |                              
+| Homework                                | TBA |
+| Python Exercises                        | TBA |
+| Midterm                                 | TBA |
+| Final                                   | TBA |                          
 | **Total**                               | **100%** |
 
 ### Project
@@ -49,9 +42,13 @@ Your percentage grade in this course will be weighted using these categories:
 
 ### Homework
 
-There will be four individual written exercises. They focus on mechanical, theory, and basic application problems to reinforce content from lecture, and are explicitly designed to provide practice for the exams. Exercises are distributed on the course website in PDF form and due on Gradescope. Exercises are to be completed individually, although you may discuss concepts and problems at a high-level as outlined in our Collaboration policy.
+There will be weekly homeworks. All homeworks will be graded via the “self-assessment” process described on the homework page of the course website. Exercises are to be completed individually, although you may discuss concepts and problems at a high-level as outlined in our Collaboration Policy.
+
+### Python Exercises (Mini-Projects)
+There will be several Python projects that you will complete in the Friday Sections in groups of size 1-3. You are welcome to work on the projects alone, but encouraged to work in teams. The goal will be to have 1-2 graded Python notebooks per module.
 
 ### Exam
+There will be two exams in this class: midterm (~5-6th week) and final (last week). 
 
 
 
@@ -65,27 +62,27 @@ Ultimately, **the goal of enrolling in this course is for _you_ to learn this ma
 
 ## Course Tools
 
-This quarter, we will use a number of different tools in EE/AA 547. Reach out to the course staff if you have questions about using any of them.
+This quarter, we will use a number of different tools in EE345. Reach out to the course staff if you have questions about using any of them.
 
 ### Zoom
 We will have a single [Zoom link](
- https://washington.zoom.us/j/93892460942) for the course. This will be used for remote
+) for the course. This will be used for remote
 lecture sessions as well as for office hours. 
 
 ### Canvas
-Like many other EE/AA courses, we are mainly using [Canvas](https://canvas.uw.edu/courses/1513853) as a gradebook and a place to find Zoom/Panapto recordings. Please refer to the course website for most course information, including assignment specs and due dates. Recordings will be linked from the course website to Canvas or Google Drive where they are hosted.
+Like many other courses, we are mainly using [Canvas](https://canvas.uw.edu/courses/1860120) as a gradebook and a place to find lecture recordings. Please refer to the course website for most course information, including assignment specs and due dates. Recordings will be linked from the course website to Canvas or Google Drive where they are hosted.
 
-### Discord
- [Discord](https://discord.gg/kEQyUWwKM7) will be used as a discussion board. More details below. It is optional however I will be active on there answering questions on homework and lecture content. 
+### Chat/Online Discussions
+ We are considering establishing a [Discord]() server or using the chat feature in canvas; we will let you all know after we query the class to see the main preference.  Both Adhyyan (TA) and I will strive to be active on the discussion board, answering questions on homework and lecture content. 
 
 ### Gradescope
-We will only use [gradescope](https://www.gradescope.com/courses/337452) for uploading the exam. All other assignments will
+We will only use [gradescope](https://www.gradescope.com/courses/1140040) for uploading the exam. All other assignments will
 be uploaded to canvas. 
 
 ## Getting Help from Staff & Peers
 
 ### Discussion Board
- [Discord](https://discord.gg/kEQyUWwKM7) both serve as online discussion forums. For most questions about the course or materials, they are the right place to ask: the course staff read them regularly, so you will get a quick answer.  However, if you need to send the course staff a private message, we recommend canvas or direct email instead of Discord's private messages since these are easily missed.
+TBD will both serve as online discussion forums. For most questions about the course or materials, they are the right place to ask: the course staff read them regularly, so you will get a quick answer.  However, if you need to send the course staff a private message, we recommend canvas or direct email instead of TBD private messages since these are easily missed.
 
 To meet with us, the best way is to visit our virtual Office Hours. Many of us are available at other times by appointment. In Office Hours, you can ask questions about the material, receive guidance on assignments, and work with peers and course staff in a small group setting.
 

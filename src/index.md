@@ -1,14 +1,14 @@
 ---
 title: Home
-heading: Linear Systems Theory
-subtitle: Winter 2022
+heading: Introduction to Foundations of ML
+subtitle: Fall 2025
 template: no-toc.html
 nav_order: 0
 description: >-
-    Linear Systems Theory, Winter 2022
+    Introduction to Foundations of ML, Fall 2025
 extra_css: ['schedule.scss']
 ---
-**Reminder**: 510 is a pre-requisite to this course. If you have not taken it, please email Prof. Ratliff.
+
 
 ## Announcements {: .mt-4 }
 {% for announcement in (announcements | sort(attribute="meta.date", reverse=True))[:3] %}
@@ -18,7 +18,7 @@ extra_css: ['schedule.scss']
 {% include 'announcement.html' %}
 {% endfor %}
 
-{% if announcements | length >= 3 %}
+{% if announcements | length >= 0 %}
 [All Announcements](/announcements.md){: .btn .btn-373 .fs-3}
 {% endif %}
 

@@ -1,5 +1,5 @@
-site_name: EE/AA 547
-site_url: https://ratlifflj.github.io/547-W22
+site_name: EE345
+site_url: https://ratlifflj.github.io/F25-EE345
 
 docs_dir: src
 
@@ -111,3 +111,4 @@ plugins:
       minify_js: false
       htmlmin_opts:
           remove_comments: true
+

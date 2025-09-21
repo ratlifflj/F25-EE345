@@ -4,22 +4,13 @@ schedule:
   projects:
     default_type: project
     entries:
-      - title: Mod1-RL1 Solutions to ODEs
-        url: https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aa491bcd-b994-462e-9a5a-adfc0136d317 
-        start: 2022-1-03
-        end: 2022-1-05
-      - title: Mod1-RL2 Solutions LTV Systems
-        url: https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3dcb897c-641a-4bb8-bd90-ae02017d153b
-        start: 2022-1-06
-        end: 2022-1-10
-      - title: Mod2-RL1 Introduction to Stability
-        url: https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e0ffdcaf-19ee-40aa-8b68-ae06014e6a9e
-        start: 2022-1-11
-        end: 2022-1-12
-      - title: Mod2-RL2 Lyapunov Stability
-        url: https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e0ffdcaf-19ee-40aa-8b68-ae06014e6a9e
-        start: 2022-1-13
-        end: 2022-1-16
-        type: 'project'
+      - title: Mod1 Data Fitting Concepts I
+        url: TBA
+        start: 2025-9-25
+        end: 2025-9-29
+      - title: Mod1 Data Fitting Concepts II 
+        url: TBA
+        start: 2025-9-29
+        end: 2025-10-3
 
 
