@@ -1,0 +1,7 @@
+[mkdocs.plugins]
+append-to-pages = plugins.append_to_pages:AppendToPagesPlugin
+auto-nav = plugins.auto_nav:AutoNavPlugin
+collections = plugins.collections:CollectionsPlugin
+sass = plugins.sass:SassPlugin
+url-validation = plugins.more_url_validation:MoreUrlValidationPlugin
+

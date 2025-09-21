@@ -1,0 +1,11 @@
+<div class="announcement">
+  <details {%- if expand %} open{% endif %}>
+    <summary class="announcement-header">
+      <span class="announcement-header-label label-373">{{ announcement.meta.date.strftime('%b %d') }}</span>
+      <h2 class="announcement-title">{{ announcement.title }}</h2>
+    </summary>
+    <div class="announcement-body">
+      {{ announcement.content }}
+    </div>
+  </details>
+</div>

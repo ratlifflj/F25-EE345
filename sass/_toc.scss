@@ -1,0 +1,89 @@
+@import 'variables';
+
+/*
+ * TOC sidebar
+ *
+ * Scrollspy enhanced navigation to highlight sections and secondary
+ * sections of docs content.
+ */
+
+/* Toggle (vertically flip) sidebar collapse icon */
+.bs-sidebar .navbar-toggler span {
+  -moz-transform: scale(1, -1);
+  -webkit-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+.bs-sidebar .navbar-toggler.collapsed span {
+  -moz-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+/* All levels of nav */
+.bs-sidebar .nav-link {
+  padding: .25rem 1rem;
+  border-left: 1px solid transparent;
+}
+.bs-sidebar .nav-link:hover,
+.bs-sidebar .nav-link:focus {
+  border-left: 1px solid;
+}
+.bs-sidebar .nav-link.active,
+.bs-sidebar .nav-link.active:hover,
+.bs-sidebar .nav-link.active:focus {
+  border-left: 1px solid;
+}
+
+.bs-sidebar .nav .nav .nav {
+  margin-left: 1em;
+}
+
+.bs-sidebar .nav-link {
+  font-weight: bold;
+}
+
+.bs-sidebar .nav .nav .nav-link {
+  font-weight: normal;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters#Nesting_counters */
+.bs-sidebar ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+.bs-sidebar li {
+  counter-increment: section;
+}
+.bs-sidebar .nav-link::before {
+  content: counters(section, ".") ") ";
+}
+
+
+#toc-collapse {
+  position: sticky;
+  z-index: 1020;
+}
+#toc-collapse.show {
+  top: var(--navbar-height) !important;
+  max-height: calc(100vh - var(--navbar-height));
+}
+// Add background color to all elements before TOC for consistency
+@media (max-width: 767.98px) {
+  .before-main {
+    transition: background-color .35s ease, top .35s ease;
+    background-color: $body-bg-color;
+  }
+
+  .before-main.show {
+    background-color: #d9e3ec;
+  }
+}
+
+
+

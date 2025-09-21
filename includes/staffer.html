@@ -1,0 +1,29 @@
+<div class="staffer">
+
+    <div class="staffer-item" id="staffer-left">
+        {% if page.meta.photo %}
+        <img class="staffer-image" src="{{ ('/staff/images/' ~ page.meta.photo) | url }}" alt="Photo of {{ page.meta.name }}">
+        {% endif %}
+        <p>
+            <span class="staffer-name">
+                {{ page.meta.name }}
+                {% if page.meta.website %}
+                <a href="{{ page.meta.website }}" target="_blank"><i class="fa fa-home" aria-hidden="true"></i></a>
+                {% endif %}
+            </span>
+        </p>
+        {% if page.meta.pronouns %}<p>{{ page.meta.pronouns }}</p>{% endif %}
+        {% if page.meta.section %}<p>{{ page.meta.section }}</p>{% endif %}
+        {% if page.meta.email %}
+        <!-- research (TM) shows that converting mailto links into HTML entities reduce spam -->
+        {% set email_link = page.meta.email | replace('@', '&commat;') | replace('.', '&#x0002E;') %}
+        {% set email_text = page.meta.email | replace('cs.washington.edu', 'cs') | replace('uw.edu', 'uw') %}
+        <p><a href="&#x6D;&#x61;&#x69;&#x6C;&#x74;&#x6F;&colon;{{ email_link }}">{{ email_text }}</a></p>
+        {% endif %}
+        {% if page.meta.meeting %}<a href="{{ page.meta.meeting }}" class="btn btn-373 m-3 mt-4">Schedule 1:1 Meeting</a>{% endif %}
+
+    </div>
+    <div class="staffer-item" id="staffer-right">
+        {{ page.content }}
+    </div>
+</div>

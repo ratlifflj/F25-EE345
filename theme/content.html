@@ -1,0 +1,49 @@
+{% block content_header %}
+<header class="row before-main pt-4">
+    <div class="col-md-9 pl-md-5">
+        {#<nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                {% for page in parents|reverse %}
+                    <li class="breadcrumb-item"><a href="{{ page.url|page_url }}">{{ page.title }}</a></li>
+                {% endfor %}
+
+                <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+            </ol>
+        </nav>#}
+
+        <h1 class="mt-3">{{ page.meta.heading or page.title }}</h1>
+
+        {% if page.meta.subtitle %}
+            <div class="h2 text-muted subtitle">{{ page.meta.subtitle|markdown }}</div>
+        {% endif %}
+        <hr>
+    </div>
+</header>
+{% endblock %}
+
+{% block content_body %}
+<div class="row">
+    <div id="toc-collapse" class="col-md-3 order-md-2 sticky-sidebar-md navbar-light navbar-expand-md bs-sidebar hidden-print before-main thin-scrollbar" role="complementary">
+        {% include "toc.html" %}
+    </div>
+    <main class="col-md-9 order-md-1 pl-md-5" role="main">
+        <hr class="d-md-none">
+        {{ page.content }}
+
+        {% if page.children %}
+        {% block content_children %}
+        <hr>
+        <h2>Subpages</h2>
+        <ol {%- if page.meta.child_numbering_start is defined %} start="{{ page.meta.child_numbering_start }}" {%- endif %}>
+        {% for child in page.children %}
+            <li>
+                <a href="{{ child.url|page_url }}">{{ child.title }}</a>
+                {%- if child.meta.summary %} - {{ child.meta.summary | markdown | replace('<p>','') | replace('</p>','') }}{% endif %}
+            </li>
+        {% endfor %}
+        </ol>
+        {% endblock %}
+        {% endif %}
+    </main>
+</div>
+{% endblock %}

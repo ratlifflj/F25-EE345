@@ -1,0 +1,44 @@
+{% macro link(nav_item, active=false, hidden=false) %}
+{% set classes = ['nav-link', 'active' if active, 'font-italic' if hidden]|select %}
+<a href="{{ nav_item.url|page_url }}" class="{{ classes|join(' ') }}">{{ nav_item.title }}</a>
+{% endmacro %}
+
+
+{% macro nav_li(nav_item, hidden=false) %}
+
+{%- if not nav_item.children %}
+    <li class="nav-item">
+        {{ link(nav_item, nav_item.active, hidden) }}
+    </li>
+{%- else %}
+    {% set parent = nav_item in parents %}
+    <li class="nav-item {%- if parent or nav_item.active %} nav-parent {% endif %}">
+        <details {%- if parent or nav_item.active %} open {%- endif %}>
+            {# TODO why are parents active? #}
+            <summary class="{%- if nav_item.active and not parent -%} active {%- endif %}">
+                {{ link(nav_item, nav_item.active and not parent, hidden) }}
+            </summary>
+            <ul class="nav nav-pills flex-column">
+                {%- for nav_item in nav_item.children %}
+                    {{ nav_li(nav_item, hidden) }}
+                {%- endfor %}
+                {% if parent %}
+                    {% set parent_index = parents.index(nav_item) %}
+                    {% set child = parents[parent_index - 1] if parent_index > 0 else page %}
+                    {% if child not in nav_item.children %}
+                        {{ nav_li(child, true) }}
+                    {% endif %}
+                {% endif %}
+            </ul>
+        </details>
+    </li>
+{%- endif %}
+
+{% endmacro %}
+
+
+<ul class="nav nav-pills flex-column">
+    {%- for nav_item in nav %}
+        {{ nav_li(nav_item) }}
+    {%- endfor %}
+</ul>

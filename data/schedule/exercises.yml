@@ -1,0 +1,37 @@
+schedule:
+  start_indices:
+    exercise: 1
+  defaults:
+    exercise:
+      url: /exercises/exercise{num}.pdf
+  exercises:
+    default_type: exercise
+    entries:
+      - title: Algorithmic Analysis I
+        start: 2020-7-3
+        end: 2020-7-10
+        url: /exercises/exercise1.pdf
+      - title: Algorithmic Analysis II
+        start: 2020-7-10
+        end: 2020-7-17
+        url: /exercises/exercise2.pdf
+      - title: Exam I
+        is_exam: true
+        start: 2020-7-24
+        end: 2020-7-25
+        num: 1
+        url: https://www.gradescope.com/courses/141341/assignments/569908
+      - title: BFS, DFS, & Dijkstra's
+        start: 2020-7-31
+        end: 2020-8-7
+        url: /exercises/exercise3.pdf
+      - title: MSTs & Sorting
+        start: 2020-8-10
+        end: 2020-8-17
+        url: /exercises/exercise4.pdf
+      - title: Exam II
+        is_exam: true
+        start: 2020-8-21
+        end: 2020-8-22
+        num: 2
+        url: https://www.gradescope.com/courses/141341/assignments/608174

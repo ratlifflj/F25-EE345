@@ -1,0 +1,15 @@
+schedule:
+  start_indices:
+    homework: 1
+  defaults:
+    homework:
+      url: /homework/hw{num}.pdf
+  homeworks:
+    default_type: homework
+    entries:
+      - title: ODEs and Stability (Due 1/16)
+        start: 2022-1-10
+        end: 2022-1-16
+        url: 
+
+      

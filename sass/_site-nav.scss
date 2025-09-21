@@ -1,0 +1,127 @@
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins/breakpoints";
+@import "variables";
+
+#cse373-site-nav {
+  background-color: $sidebar-color;
+  box-shadow: $sidebar-shadow;
+  top: var(--navbar-height);
+  max-height: calc(100vh - var(--navbar-height));
+  z-index: 1021; /* on top of TOC */
+  position: fixed;
+  padding-left: 0;
+  padding-right: 0;
+
+  &.collapsing {
+    overflow: hidden;
+  }
+
+  .nav {
+    margin-left: 0.5rem;
+    .nav {
+      margin-left: 1rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #cse373-site-nav {
+    width: calc(50% - min(#{$max-content-width}, 100%) / 4);
+    flex-basis: calc(50% - min(#{$max-content-width}, 100%) / 4);
+    flex-grow: 0; // Override from .navbar-collapse
+    padding-left: calc(50% - min(#{$max-content-width}, 100%) / 2);
+  }
+  #cse373-content {
+    width: calc(50% + min(#{$max-content-width}, 100%) / 4);
+    flex-basis: calc(50% + min(#{$max-content-width}, 100%) / 4);
+    max-width: $max-content-width * 3 / 4;
+  }
+}
+
+#cse373-site-nav {
+  .nav-link, >.cse373-brand-container, >.navbar-header {
+    $min-pl: 1.5rem;
+    $min-pl-px: $min-pl * 16px/1rem; // assume default: 1rem = 16px
+    $max-pl: 2.5rem;
+    $max-pl-width: $max-content-width;
+    $min-pl-width: map-get($grid-breakpoints, 'lg');
+    // needs quoting, since sass doesn't automatically ignore the clamp function yet
+    padding-left: unquote('clamp(#{$min-pl}, #{$min-pl-px/($max-pl-width - $min-pl-width)} * (100vw - #{$min-pl-width}) + #{$max-pl - $min-pl}, #{$max-pl})');
+  }
+}
+
+.cse373-brand-container {
+  font-size: 2.3rem;
+  font-weight: 500;
+  color: $body-text-color !important;
+  padding: 2.5rem 0 1rem 2rem;
+  margin: 0 0 0 0.5rem;
+}
+
+#cse373-site-nav .navbar-header {
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+}
+
+#cse373-site-nav {
+  details {
+    background-color: initial;
+    border-style: solid;
+    border-width: 0 0 0 1px;
+    border-color: transparent;
+    &[open] {
+      padding-bottom: .25em;
+      margin-bottom: .25em;
+      border-color: #5d5d6e;
+      background-color: rgba(100%, 100%, 100%, .05);
+    }
+  }
+  summary {
+    display: flex;
+    list-style: none; // Firefox
+    // Webkit
+    &::-webkit-details-marker {
+      display: none;
+    }
+    &:after {
+      content: "◄";
+      display: flex;
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+      align-items: center;
+      font-size: 9pt;
+      color: #c7c7c7;
+    }
+    > a {
+      display: flex;
+      flex-grow: 1;
+    }
+  }
+  [open]>summary:after {
+    content: "▼";
+  }
+}
+
+#cse373-site-nav .nav-parent>details {
+  border-color: #a7a7e5;
+}
+
+#cse373-site-nav .nav-link {
+  border-radius: 0; // remove border radius from .nav-pills
+  font-size: 0.95rem;
+}
+#cse373-site-nav .nav-item>.nav-link {
+  border-style: solid;
+  border-width: 0 0 0 1px;
+  border-color: transparent;
+}
+#cse373-site-nav .nav-item>.active {
+  border-color: #a7a7e5;
+}
+#cse373-site-nav .active {
+  background-color: $sidebar-highlight-color;
+}
+#cse373-site-nav .active>.active {
+  background-color: transparent;
+}

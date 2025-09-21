@@ -1,0 +1,165 @@
+{% from 'vars.html' import parents with context %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      {%- block site_meta %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% if page and page.is_homepage %}<meta name="description" content="{{ config['site_description'] }}">{% endif %}
+        {% if config.site_author %}<meta name="author" content="{{ config.site_author }}">{% endif %}
+        {% if page and page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
+        {% if config.theme.favicon %}
+        <link rel="shortcut icon" href="{{ 'img/favicon.ico'|url }}">
+        {% endif %}
+      {%- endblock %}
+
+      {%- block htmltitle %}
+        <title>{% if page and page.title and not page.is_homepage %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+      {%- endblock %}
+
+      {%- block styles %}
+        <!-- fonts -->
+        <link rel="stylesheet" href="https://courses.cs.washington.edu/courses/cse373/tools/fonts/inter/inter.css">
+        <link href="{{ 'css/base.scss'|url }}" rel="stylesheet">
+        <link href="{{ 'css/font-awesome.min.css'|url }}" rel="stylesheet">
+
+        {%- for path in config['extra_css'] %}
+        <link href="{{ path|url }}" rel="stylesheet">
+        {%- endfor %}
+        {%- for path in (page.meta['extra_css'] if page else []) %}
+        <link href="{{ path|url }}" rel="stylesheet">
+        {%- endfor %}
+      {%- endblock %}
+
+    {%- block libs %}
+    {% if config.google_analytics %}
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{config.google_analytics[0]}}"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', '{{config.google_analytics[0]}}', { 'anonymize_ip': true });
+        </script>
+    {% endif %}
+      {%- endblock %}
+
+      {%- block extrahead %} {% endblock %}
+    </head>
+
+    <body{% if page and page.is_homepage %} class="homepage"{% endif %} data-spy="scroll" data-target="#toc" data-offset="100">
+        <div class="navbar fixed-top d-lg-none navbar-light">
+
+            <div>
+                {%- if nav|length > 1 %}
+                <!-- Expander button -->
+                    {%- block navbar_nav_toggler %}
+                    <button type="button" class="navbar-toggler align-top mr-2" data-toggle="collapse" data-target="#cse373-site-nav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    {%- endblock %}
+                {%- endif %}
+
+                {%- block navbar_site_name %}
+                    <a class="navbar-brand" href="{{ nav.homepage.url|page_url }}">{{ config.site_name }}</a>
+                {%- endblock %}
+            </div>
+
+            <!-- Expanded navigation -->
+            <div id="navbar-collapse" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav ml-auto">
+                  {%- block search_button %}
+                    {%- if 'search' in config['plugins'] %}
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fa fa-search"></i> Search
+                        </a>
+                    </li>
+                    {%- endif %}
+                  {%- endblock %}
+                </ul>
+            </div>
+
+            <!-- TOC toggler -->
+            {% block navbar_toc_toggler %}
+                <div class="navbar-expand-md">
+                    <button type="button" class="navbar-toggler" data-toggle="show" data-target=".before-main" title="Table of Contents">
+                        <span class="fa fa-angle-down"></span>
+                    </button>
+                </div>
+            {% endblock %}
+        </div>
+        <div class="container-fluid">
+            <div class="row navbar-expand-lg">
+
+                {%- block site_nav %}
+                    {%- if nav|length>1 %}
+                        <nav id="cse373-site-nav" class="col-lg sticky-sidebar-lg flex-column align-items-stretch collapse navbar-collapse thin-scrollbar">
+                            <a class="navbar-brand d-none d-lg-block cse373-brand-container" href="{{ nav.homepage.url|page_url }}">
+                                {{ config.site_name }}
+                            </a>
+                            <!-- Main navigation -->
+                            {% include "nav.html" %}
+
+                            {# 0 x-margins needed to display in flex: https://stackoverflow.com/a/34372979 #}
+                            <hr class="mx-0">
+                            <span class="h5 navbar-header">
+                                Course Tools
+                                <small><i class="fa fa-external-link text-muted" aria-hidden="true"></i></small>
+                            </span>
+                            <ul class="nav nav-pills flex-column">
+                                {%- for name, url in config.theme.external_links.items() %}
+                                    <li class="nav-item">
+                                        <a href="{{ url }}" class="nav-link">{{ name }}</a>
+                                    </li>
+                                {%- endfor %}
+                            </ul>
+
+                            {%- block nav_footer %}
+                            <footer class="mt-auto">
+                                {{ config.theme.nav_footer_content | markdown }}
+                            </footer>
+                            {%- endblock %}
+                        </nav>
+                    {%- endif %}
+                {%- endblock %}
+
+                {%- block content %}
+                    <div id="cse373-content" class="col-lg">
+                        {% include "content.html" %}
+                    </div>
+                {%- endblock %}
+            </div>
+        </div>
+
+      {%- block scripts %}
+        <script>
+            var base_url = {{ base_url | tojson }};
+            {% if 'shortcuts' in config.theme %}var shortcuts = {{ config.theme.shortcuts | tojson }};{% endif %}
+        </script>
+        <script src="{{ 'js/base.js'|url }}" defer></script>
+        {%- for path in config['extra_javascript'] %}
+        <script src="{{ path|url }}" defer></script>
+        {%- endfor %}
+        {%- for path in (page.meta['extra_javascript'] if page else []) %}
+        <script src="{{ path|url }}" defer></script>
+        {%- endfor %}
+      {%- endblock %}
+
+        {% if 'search' in config['plugins'] %}{%- include "search-modal.html" %}{% endif %}
+        {% if 'shortcuts' in config.theme %}{%- include "keyboard-modal.html" %}{% endif %}
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
+{% if page and page.is_homepage %}
+<!--
+MkDocs version : {{ mkdocs_version }}
+Build Date UTC : {{ build_date_utc }}
+-->
+{% endif %}

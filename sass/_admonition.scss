@@ -1,0 +1,45 @@
+
+.admonition {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+
+  &-title {
+    font-weight: bold;
+    grid-column: 1;
+    margin-bottom: 0;
+  }
+  &>p:not(&-title) {
+    grid-column: 2;
+    margin-left: 1rem;
+  }
+
+  &.task, &.reference, &.background {
+    @extend .alert;
+    @extend .alert-light;
+  }
+
+  &.note {
+    @extend .alert;
+    @extend .alert-secondary;
+  }
+
+  &.info {
+    @extend .alert;
+    @extend .alert-info;
+  }
+
+  &.tip {
+    @extend .alert;
+    @extend .alert-success;
+  }
+
+  &.warning {
+    @extend .alert;
+    @extend .alert-warning;
+  }
+
+  &.caution {
+    @extend .alert;
+    @extend .alert-danger;
+  }
+}

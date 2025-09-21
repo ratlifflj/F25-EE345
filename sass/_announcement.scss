@@ -1,0 +1,35 @@
+
+.announcement {
+  background-color: $card-bg-color;
+  border-radius: 5px;
+  box-shadow: $card-shadow;
+  margin: 0.75rem 0;
+  // max-width: 850px;
+  details {
+    background-color: initial;
+    border: initial;
+    color: $body-color;
+  }
+  summary {
+    border-color: $announcement-divider-color;
+  }
+}
+
+.announcement-header {
+  padding: 0.75rem 1rem;
+}
+
+.announcement-header-label {
+  background-color: $announcement-badge-bg;
+}
+
+.announcement-title {
+  display: inline;
+  font-size: 1.1rem;
+  margin: 0 .5rem;
+  font-weight: 400;
+}
+
+.announcement-body > :last-child {
+  margin-bottom: 0;
+}

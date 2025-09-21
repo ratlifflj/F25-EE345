@@ -1,0 +1,14 @@
+{# define some helpful variables #}
+
+{# path from current page to root; starts with direct parent at index 0 #}
+{% set parents = [] %}
+
+{%- macro add_parent(p) %}
+    {%- if p.parent is not none -%}
+        {{ parents.append(p.parent) or "" }}{{ add_parent(p.parent) }}
+    {%- endif %}
+{%- endmacro %}
+
+{%- if page is not none -%}
+    {{ add_parent(page) }}
+{%- endif %}

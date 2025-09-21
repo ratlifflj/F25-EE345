@@ -1,0 +1,38 @@
+{%- if not nav_item.children %}
+<li class="nav-item">
+{#    <div>#}
+        <a href="{{ nav_item.url|page_url }}" class="nav-link {%- if nav_item.active %} active{% endif %}">{{ nav_item.title }}</a>
+{#    </div>#}
+</li>
+{%- else %}
+    {% set parent = nav_item in parents %}
+    <li class="nav-item {%- if parent or nav_item.active %} nav-parent {% endif %}">
+        <details {%- if parent or nav_item.active %} open {%- endif %}>
+        {# TODO why are parents active? #}
+            <summary class="{%- if nav_item.active and not parent %} active {%- endif %}"><a href="{{ nav_item.url|page_url }}" class="nav-link {%- if nav_item.active and not parent %} active {%- endif %}">{{ nav_item.title }}</a></summary>
+            <ul class="nav nav-pills flex-column ml-3">
+                {%- for nav_item in nav_item.children %}
+                    {% include "nav-sub.html" %}
+                {%- endfor %}
+            </ul>
+        </details>
+    </li>
+
+{#{%- elif nav_item.children|length == 1 %}#}
+{#    {%- for nav_item in nav_item.children %}#}
+{#        {% include "nav-sub.html" %}#}
+{#    {%- endfor %}#}
+{#{%- else %}#}
+{#  <li>#}
+{#  <details>#}
+{#    {%- for nav_item in nav_item.children[:1] %}#}
+{#        <summary><a href="{{ nav_item.url|page_url }}" class="{% if nav_item.active %}active{% endif %}">{{ nav_item.title }}</a></summary>#}
+{#    {%- endfor %}#}
+{#    <ul>#}
+{#        {%- for nav_item in nav_item.children[1:] %}#}
+{#            {% include "nav-sub.html" %}#}
+{#        {%- endfor %}#}
+{#    </ul>#}
+{#  </details>#}
+{#  </li>#}
+{%- endif %}

@@ -1,0 +1,21 @@
+@import "darcula";
+@import "variables";
+
+code {
+  padding: 2px 5px;
+  background: #fff;
+  border: solid 1px #e1e4e5;
+  color: #333;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+pre code {
+  display: block;
+  background: transparent;
+  border: none;
+  white-space: pre;
+  word-wrap: normal;
+  font-family: SFMono-Regular, Monaco, 'Andale Mono', 'Lucida Sans Typewriter', Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 13px;
+}

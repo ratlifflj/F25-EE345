@@ -1,0 +1,11 @@
+schedule:
+  start_indices:
+    project: 0
+  projects:
+    default_type: project
+    entries:
+      - title: Module 1 Solutions to ODEs
+        url: /lectures/1.pdf
+        start: 2022-1-04
+        end: 2022-1-06
+

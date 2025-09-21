@@ -1,0 +1,58 @@
+/* CSE 373 20Su-Specific Variables 
+orange #fa8231;
+purple #c869bf
+? #0fb9b1
+ */
+$body-text-color: #454545;
+$body-bg-color: #fefefe;
+$link-color: #36b;
+$link-hover-color: transparentize($link-color, 0.9);
+$light-text-color: #fefefe;
+$subtitle-text-color: #959595;
+$sidebar-color: #f5f6fa;
+$sidebar-highlight-color: #71b4d6;
+$announcement-badge-bg: #71b4d6;
+$section-color: #f7b731;
+$lecture-color: #0fbfcf; 
+$holiday-color: #fefefe;
+$exercise-color: #c869bf; /*#c869bf;*/ 
+$homework-color: #c869bf;
+$project-color:  #54a0ff; 
+$exam-color: #ef5777;
+$lecture-cal-bg: #fefefe;
+$section-cal-bg: #f5f5f5;
+$holiday-cal-bg: #e5e5e5;
+$assignment-cal-bg: #fefefe; /* original #fefefe;*/
+$project-active-cal-bg: lighten($project-color, 28%);
+$project-active-hover-bg: darken($project-active-cal-bg, 20%);
+$exercise-active-cal-bg: #fa8231; /*#fa8231;#d4edec*/
+$exercise-active-hover-bg: darken($exercise-active-cal-bg, 40%);
+$homework-active-cal-bg: #d4edec; /*#fa8231;*/
+$homework-active-hover-bg: darken($exercise-active-cal-bg, 20%);
+$exam-active-cal-bg: lighten($exam-color, 28%);
+$exam-active-hover-bg: darken($exam-active-cal-bg, 10%);
+$card-bg-color: #ffffff;
+$label-color: #222222;
+$assignment-outline-color: #5a9629; /*#7c7c7c;*/
+$schedule-divider-color: #e6e1e8;
+$schedule-icon-color: #79797999;
+$schedule-button-color: #f7f7f7;
+$schedule-button-hover-color: darken($schedule-button-color, 10%);
+$announcement-divider-color: #eee8f0;
+
+$sidebar-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.1);
+$card-shadow: 0 1px 3px rgba(0,0,0,0.07), 0 4px 14px rgba(0,0,0,0.05);
+$btn-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 3px 10px rgba(0,0,0,0.08);
+
+$body-font-family: "Inter", -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$title-font-family: $body-font-family;
+$body-font-size: 15px;
+
+$staff-photo-diameter-height: 105.75px;
+$staff-photo-diameter: 75.75px;
+/*103.73px;*/
+
+$max-content-width: 1400px;
+$schedule-simplified-view: 1100px;
+
+/* End CSE 373 Variables */

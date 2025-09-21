@@ -1,0 +1,113 @@
+site_name: EE/AA 547
+site_url: https://ratlifflj.github.io/547-W22
+
+docs_dir: src
+
+google_analytics:
+  - UA-170238427-1
+  - auto
+
+theme:
+  name: null
+  custom_dir: theme
+
+  static_templates:
+    - 404.html
+
+  include_search_page: false
+  search_index_only: false
+
+  navigation_depth: 3
+
+  favicon: false
+
+  external_links:
+    Lecture Recordings: https://uw.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=b2c37b96-31eb-4060-9342-adce0142c577
+    Zoom Link:  https://washington.zoom.us/j/93892460942 
+    Gradescope: &gradescope https://www.gradescope.com/courses/337452
+    Discord Link: https://discord.gg/kEQyUWwKM7
+  nav_footer_content: "[Acknowledgements](acknowledgements.md)"
+
+markdown_extensions:
+  - pymdownx.extra
+  - admonition
+  - codehilite:
+      linenums: true
+  - sane_lists
+  - smarty:
+      smart_angled_quotes: true
+  - toc:
+      marker: "" # disable, since theme has its own TOC
+      permalink: true
+      toc_depth: "2-6"
+  - markdown_katex
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_alt
+  - pymdownx.escapeall:
+      hardbreak: true
+  - pymdownx.smartsymbols
+  - pymdownx.highlight:
+      linenums_style: pymdownx-inline
+
+# TODO: consider more plugins from https://facelessuser.github.io/pymdown-extensions/
+#   keys, caret
+
+plugins:
+#  - search
+  - exclude:
+      glob: []
+  - append-to-pages:
+      # Note: "CSE" must be after "CSE X" entries in order for the latter to get caught
+      prepend: |
+        *[ADT]:
+        *[ADTs]:
+        *[AVL]:
+        *[CS]:
+        *[CSE 143]:
+        *[CSE 373]:
+        *[CSE]:
+        *[DRS]:
+        *[EX1]:
+        *[EX2]:
+        *[EX3]:
+        *[EX4]:
+        *[GPA]:
+        *[GPAs]:
+        *[IDE]:
+        *[IDEs]:
+        *[MOSS]:
+        *[NP]:
+        *[P1]:
+        *[P2]:
+        *[P3]:
+        *[P4]:
+        *[P]:
+        *[P0]:
+        *[PDF]:
+        *[TA]:
+        *[TAs]:
+        *[UW]:
+  - markdown-filter
+  - bootstrap-tables
+  - collections: # must load before macros
+      collections:
+        announcements: {}
+        staff: {}
+  - auto-nav
+  - macros:
+      include_dir: includes
+      include_yaml:
+        - data/vars.yml
+        - data/schedule/lectures.yml
+        - data/schedule/sections.yml
+        - data/schedule/projects.yml
+        - data/schedule/homework.yml
+  - sass
+  - url-validation
+  - minify:
+      minify_html: true
+      minify_js: false
+      htmlmin_opts:
+          remove_comments: true

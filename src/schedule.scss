@@ -1,0 +1,333 @@
+@import "variables";
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins/breakpoints";
+
+h2.homepage-header {
+    margin-top: 2rem;
+}
+
+.class-date, .class-data {
+    border-top: 1px solid $schedule-divider-color;
+
+    .row-lecture>& {
+        background-color: $lecture-cal-bg;
+    }
+
+    .row-section>& {
+        background-color: $section-cal-bg;
+    }
+
+    .row-holiday>& {
+        background-color: $holiday-cal-bg;
+    }
+}
+
+td.module-inactive,, td.project-inactive, td.exercise-inactive {
+    border-top: none;
+}
+
+.course-calendar {
+    margin-top: 0.75rem;
+    box-shadow: $card-shadow;
+    border-radius: 5px;
+
+    th {
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        text-align: center;
+        color: $body-text-color;
+        font-weight: 600;
+        border-top: none;
+        border-bottom: solid 1px $assignment-outline-color;
+    }
+
+    tr, td {
+        height: 40px;
+    }
+
+    th, td {
+        &.dummy {
+            // Workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=332740
+            max-width: 0;
+            padding: 0;
+            display: block; // required for max-width to take effect on Chrome & Safari
+        }
+    }
+
+    .class-title-text {
+        font-size: 1.05em;
+        font-weight: 500;
+    }
+
+    .resource-group {
+        margin-top: 0.5rem;
+
+        .resource-label {
+            margin: 0.5rem;
+            text-transform: capitalize;
+        }
+
+    }
+
+    .label-lecture {
+        background-color: $lecture-color;
+    }
+
+    .label-section {
+        background-color: $section-color;
+    }
+
+    .label-holiday {
+        background-color: $holiday-color;
+        color: $body-text-color;
+    }
+
+    .label-project {
+        background-color: $project-color;
+    }
+
+    .label-exercise {
+        background-color: $exercise-color;
+    }
+    .label-module {
+        background-color: $exercise-color;
+    }
+
+
+    .label-exam {
+        background-color: $exam-color;
+    }
+
+    td:first-child {
+        // a fairly arbitrary value that works
+        padding-left: calc(5% - 1rem);
+    }
+
+    tr.week-start td.week-name {
+        border-top: 1px solid $assignment-outline-color;
+        font-weight: 500;
+    }
+
+    td.module-inactive, td.project-inactive, td.exercise-inactive, td.assignment {
+        width: 20%;
+        border-left: solid 1px $assignment-outline-color;
+        background-color: $assignment-cal-bg;
+        background-clip: padding-box;  // Workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=688556
+    }
+
+    tr td.class-date {
+        width: 15%;
+    }
+
+    td.assignment {
+        vertical-align: middle;
+        text-align: center;
+        border-top: 1px solid $assignment-outline-color;
+        border-bottom: 1px solid $assignment-outline-color;
+        border-collapse: collapse;
+        padding: 0;
+        position: relative;
+    }
+
+    td.active {
+        transition: background-color 0.1s, box-shadow 0.1s;
+    }
+
+    td.project.active {
+        background-color: $project-active-cal-bg;
+
+        &:hover, &:focus-within {
+            background-color: $project-active-hover-bg;
+        }
+    }
+
+    td.module.active {
+        background-color: $exercise-active-cal-bg;
+
+        &:hover, &:focus-within {
+            background-color: $project-active-hover-bg;
+        }
+    }
+
+    td.exercise.active {
+        background-color: $exercise-active-cal-bg;
+
+        &:hover, &:focus-within {
+            background-color: $exercise-active-hover-bg;
+        }
+    }
+
+    td.exam.active {
+        background-color: $exam-active-cal-bg;
+
+        &:hover, &:focus-within {
+            background-color: $exam-active-hover-bg;
+        }
+    }
+
+    .assignment-boundary {
+        display: block;
+        position: absolute;
+        left: 0;
+        text-align: center;
+        height: 40px;
+        right: 0;
+        line-height: 40px;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: $schedule-icon-color;
+    }
+
+    .assignment-released {
+        top: 3px;
+    }
+
+    .assignment-due {
+        bottom: 3px;
+    }
+
+    @media (min-width: $schedule-simplified-view) {
+
+        td.assignment::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 18px;
+            top: 46px;
+            bottom: 46px;
+            width: 3px;
+            background-color: $schedule-icon-color;
+            border-radius: 1.5px;
+        }
+
+        .assignment-boundary {
+            text-align: left;
+
+            &::before {
+                display: inline-block;
+                font:normal normal normal 1.5em/1 FontAwesome;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                width: 40px;
+                text-align: center;
+                vertical-align: middle;
+                color: $schedule-icon-color;
+                margin-right: 10px;
+            }
+        }
+        .assignment-released::before {
+            content:"\f063";
+        }
+        .assignment-due::before {
+            content:"\f058";
+        }
+
+        .assignment-text {
+            width: calc(100% - 50px);
+        }
+    }
+
+    .assignment-text {
+        display: inline-block;
+        position: sticky;
+        top: var(--navbar-height);
+        bottom: 0;
+        left: 21px;
+        padding: 0.5em 0;
+        font-size: 1.05em;
+        font-weight: 500;
+        margin: 30px 0;
+    }
+
+    .assignment-title {
+        font-weight: 400;
+    }
+    .btn-group {
+        box-shadow: $btn-shadow;
+        border-radius: 0.25rem;
+    }
+
+    .btn-resource {
+        background-color: $schedule-button-color;
+        color: $body-text-color;
+        font-size: 0.8rem;
+        line-height: 1.5;
+        font-weight: 400;
+        padding: 0.25rem 0.5rem;
+        border-collapse: separate;
+        z-index: 1;
+        transition: background-color 0.1s;
+
+        &:not(:first-child) {
+            border-left: 1px solid $schedule-divider-color;
+        }
+
+        &:hover {
+            background-color: $schedule-button-hover-color;
+        }
+
+        &.pdf::before {
+            content: "";
+            position: relative;
+            display: inline-block;
+            background-image: url(img/pdf.png);
+            background-size: 16px 16px;
+            width: 16px;
+            height: 16px;
+            top: 2px;
+            margin-right: 5px;
+        }
+
+        &.pptx::before {
+            content: "";
+            position: relative;
+            display: inline-block;
+            background-image: url(img/pptx.png);
+            background-size: 16px 16px;
+            width: 16px;
+            height: 16px;
+            top: 2px;
+            margin-right: 5px;
+        }
+
+        &.blank::before {
+            content: "";
+            position: relative;
+            display: inline-block;
+            background-image: url(img/wksht.png);
+            background-size: 16px 16px;
+            width: 16px;
+            height: 16px;
+            top: 2px;
+            margin-right: 5px;
+        }
+
+        &.solution::before {
+            content: "";
+            position: relative;
+            display: inline-block;
+            background-image: url(img/soln.png);
+            background-size: 16px 16px;
+            width: 16px;
+            height: 16px;
+            top: 2px;
+            margin-right: 5px;
+        }
+    }
+
+    font-size: 0.8em;
+    @include media-breakpoint-up(sm) {
+        & {
+            font-size: 0.9em;
+        }
+    }
+    @include media-breakpoint-up(md) {
+        & {
+            font-size: 1em;
+        }
+    }
+
+}

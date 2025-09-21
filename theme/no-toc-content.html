@@ -1,0 +1,23 @@
+{% extends "content.html" %}
+
+{# TODO: would make sense to refactor so we don't need to duplicate this entire block to change 2 classes #}
+{% block content_header %}
+<header class="row before-main pt-4">
+    <div class="col-md-12 pl-md-5 pr-md-5">
+        <h1 class="mt-3">{{ page.meta.heading or page.title }}</h1>
+
+        {% if page.meta.subtitle %}
+        <div class="h2 text-muted subtitle">{{ page.meta.subtitle|markdown }}</div>
+        {% endif %}
+        <hr>
+    </div>
+</header>
+{% endblock %}
+
+{%- block content_body %}
+    <div class="row">
+        <main class="col-md-12 pl-md-5 pr-md-5" role="main">
+            {{ page.content }}
+        </main>
+    </div>
+{% endblock %}
