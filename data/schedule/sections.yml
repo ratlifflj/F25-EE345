@@ -18,14 +18,9 @@ schedule:
     days: ["Fri"]
     default_type: section
     entries:
-      - title: None
+      - title: No Discussion Section
         resources:
-          worksheet:
-            blank: TBA
-            solution: TBA
           resources:
-            recorded sec: TBA
-            zoom: TBA
             self-grade guide: /homework/SelfGradeGuide.pdf
       - title: Course Overview & Data Fitting
         resources:
