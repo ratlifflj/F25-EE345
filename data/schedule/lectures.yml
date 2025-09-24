@@ -7,7 +7,6 @@ schedule:
       resources: # Links always relative to schedule's page
         slides:
           pdf: /lectures/F25EE345_Lecture_{num}.pdf
-          video: https://washington.zoom.us/rec/share/lPubpqJzHIpiCCG4__P2rSYA_CgbX7nvpspMN0uf2WC-0oeunm2sB-DjwYKQOH63.54QZ8E5bQGiYmLoL
   styles:
     resources:
       slides:
@@ -26,6 +25,7 @@ schedule:
         resources:
           resources:
             Notes: TBA
+            video: https://washington.zoom.us/rec/share/lPubpqJzHIpiCCG4__P2rSYA_CgbX7nvpspMN0uf2WC-0oeunm2sB-DjwYKQOH63.54QZ8E5bQGiYmLoL
       # 2
 
 
