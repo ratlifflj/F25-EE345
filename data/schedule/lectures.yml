@@ -26,8 +26,14 @@ schedule:
           resources:
             recording: https://washington.zoom.us/rec/share/lPubpqJzHIpiCCG4__P2rSYA_CgbX7nvpspMN0uf2WC-0oeunm2sB-DjwYKQOH63.54QZ8E5bQGiYmLoL
       # 2
-
-
+      - title: "Data Fitting Concepts I"
+        resources:
+          resources:
+            recording: 
+      - title: "Data Fitting Concepts II"
+        resources:
+          resources:
+            recording: 
 
 
 
