@@ -8,8 +8,8 @@ schedule:
     default_type: homework
     entries:
       - title: Homework 1
-        start: 2025-9-23
-        end: 2025-9-30
+        start: 2025-10-1
+        end: 2025-10-8
         url: 
 
       

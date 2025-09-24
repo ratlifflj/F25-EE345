@@ -5,7 +5,7 @@ schedule:
     default_type: project
     entries:
       - title: Module 1 Data Fitting Concepts
-        url: /lectures/F25EE345_Lecture_1.pdf
+        url: /lectures/F25EE345_Lecture_2.pdf
         start: 2025-9-30
         end: 2025-10-03
 
