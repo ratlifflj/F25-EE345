@@ -27,7 +27,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs mkdocs-material markdown-katex mkdocs-exclude mkdocs-append-to-pages-plugin
+          pip install mkdocs mkdocs-material markdown-katex mkdocs-exclude git+https://gitlab.com/briankchan/markdown-katex.git@00981483ae37f1d6a2e056ad5e882332c19c8d31#egg=markdown-katex # markdown-katex==v202006.1021
+
 
       - name: Build site
         run: mkdocs build
