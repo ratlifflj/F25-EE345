@@ -27,7 +27,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs mkdocs-material markdown-katex
+          pip install mkdocs mkdocs-material markdown-katex mkdocs-exclude
 
       - name: Build site
         run: mkdocs build
