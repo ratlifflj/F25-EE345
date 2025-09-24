@@ -1,12 +1,12 @@
 schedule:
   start: 2025-9-23 # Shared across all schedule files
   start_indices:
-    lecture: 1
+    lecture: 0
   defaults:
     lecture:
       resources: # Links always relative to schedule's page
         slides:
-          pdf: /lectures/F25EE345_Lecture_{num}.pdf
+          pdf: /lectures/F25_EE345_Lecture_{num}.pdf
   styles:
     resources:
       slides:
