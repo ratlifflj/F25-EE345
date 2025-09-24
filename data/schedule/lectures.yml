@@ -1,7 +1,7 @@
 schedule:
   start: 2025-9-23 # Shared across all schedule files
   start_indices:
-    lecture: 0
+    lecture: 1
   defaults:
     lecture:
       resources: # Links always relative to schedule's page
