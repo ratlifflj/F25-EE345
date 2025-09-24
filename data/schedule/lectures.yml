@@ -6,7 +6,7 @@ schedule:
     lecture:
       resources: # Links always relative to schedule's page
         slides:
-          pdf: /lectures/F25_EE345_Lecture_{num}.pdf
+          pdf: /lectures/F25EE345_Lecture_{num}.pdf
   styles:
     resources:
       slides:
