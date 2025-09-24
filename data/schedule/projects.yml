@@ -4,11 +4,7 @@ schedule:
   projects:
     default_type: project
     entries:
-      - title: Mod1 Data Fitting Concepts I
-        url: TBA
-        start: 2025-9-25
-        end: 2025-9-29
-      - title: Mod1 Data Fitting Concepts II 
+      - title: Mod1 Data Fitting Concepts 
         url: TBA
         start: 2025-9-29
         end: 2025-10-3
