@@ -39,24 +39,6 @@ def define_env(env):
         return datetime.strptime(date, "%Y-%m-%d")
 
     @env.macro
-    def format_date(date):
-        """Format a date as YYYY-MM-DD for filenames"""
-        if isinstance(date, str):
-            date = parse_date(date)
-        return date.date().strftime("%Y-%m-%d")  # Use date() to remove time component
-
-    @env.macro
-    def filename_date(date):
-        """Format a date specifically for filenames, ensuring no time component"""
-        if isinstance(date, str):
-            date = parse_date(date)
-        elif isinstance(date, datetime):
-            pass
-        else:
-            return str(date)
-        return date.strftime("%Y-%m-%d")
-
-    @env.macro
     def dates_gen(start, days):
         r = rrule.rrule(rrule.DAILY,
                         byweekday=[DAYS_OF_THE_WEEK[d] for d in days],
@@ -77,6 +59,13 @@ def define_env(env):
         rs.rrule(r)
         rs.rrule(r_dummy)
         return iter(rs)
+
+    @env.macro
+    def filedate(date):
+        """Format a date as YYYY-MM-DD for filenames"""
+        if isinstance(date, str):
+            date = parse_date(date)
+        return date.strftime("%Y-%m-%d")
 
     # Only update collections if the plugin is present
     if 'collections' in env.conf['plugins']:
