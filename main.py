@@ -43,7 +43,7 @@ def define_env(env):
         """Format a date as YYYY-MM-DD for filenames"""
         if isinstance(date, str):
             date = parse_date(date)
-        return date.strftime("%Y-%m-%d")
+        return date.date().strftime("%Y-%m-%d")  # Use date() to remove time component
 
     @env.macro
     def dates_gen(start, days):

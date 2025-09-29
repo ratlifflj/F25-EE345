@@ -23,6 +23,7 @@ schedule:
         resource-link:
           - btn
           - btn-resource
+          - fa-pencil-square-o
 
   lectures:
     days: ["Mon", "Wed"]
