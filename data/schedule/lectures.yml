@@ -8,7 +8,7 @@ schedule:
         slides:
           pdf: /lectures/F25EE345_Lecture_{num}.pdf
         annotations:
-          pdf: /lectures/F25EE345_Lecture_{num}_{date|dateonly}.pdf
+          pdf: /lectures/F25EE345_Lecture_{num}_{date_str}.pdf
   styles:
     resources:
       slides:
