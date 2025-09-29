@@ -1,7 +1,7 @@
 schedule:
   start: 2025-9-22 # Shared across all schedule files
   start_indices:
-    lecture: 1
+    lecture: 0
   defaults:
     lecture:
       resources: # Links always relative to schedule's page
@@ -30,10 +30,8 @@ schedule:
     default_type: lecture
     entries:
       # 1
-      - title: "Welcome!"
+      - title: "Start of Fall Quarter"
         resources:
-          resources:
-            recording: https://washington.zoom.us/rec/share/lPubpqJzHIpiCCG4__P2rSYA_CgbX7nvpspMN0uf2WC-0oeunm2sB-DjwYKQOH63.54QZ8E5bQGiYmLoL
       # 2
       - title: "Data Fitting Concepts I"
         resources:
