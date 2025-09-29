@@ -46,6 +46,17 @@ def define_env(env):
         return date.date().strftime("%Y-%m-%d")  # Use date() to remove time component
 
     @env.macro
+    def filename_date(date):
+        """Format a date specifically for filenames, ensuring no time component"""
+        if isinstance(date, str):
+            date = parse_date(date)
+        elif isinstance(date, datetime):
+            pass
+        else:
+            return str(date)
+        return date.strftime("%Y-%m-%d")
+
+    @env.macro
     def dates_gen(start, days):
         r = rrule.rrule(rrule.DAILY,
                         byweekday=[DAYS_OF_THE_WEEK[d] for d in days],
