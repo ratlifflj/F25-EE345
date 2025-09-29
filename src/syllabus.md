@@ -31,10 +31,10 @@ Your percentage grade in this course will be weighted using the following catego
 
 | Category                                 | Weight |
 |-----------------------------------------|-------|
-| Homework                                | TBA |
-| Python Exercises                        | TBA |
-| Midterm                                 | TBA |
-| Final                                   | TBA |                          
+| Homework                                | 25 |
+| Python Exercises                        | 20 |
+| Midterm                                 | 25 |
+| Final                                   | 30 |                          
 | **Total**                               | **100%** |
 
 ### Project
@@ -45,7 +45,7 @@ Your percentage grade in this course will be weighted using the following catego
 There will be weekly homeworks. All homeworks will be graded via the “self-assessment” process described on the homework page of the course website. Exercises are to be completed individually, although you may discuss concepts and problems at a high-level as outlined in our Collaboration Policy.
 
 ### Python Exercises (Mini-Projects)
-There will be several Python projects that you will complete in the Friday Sections in groups of size 1-3. You are welcome to work on the projects alone, but encouraged to work in teams. The goal will be to have 1-2 graded Python notebooks per module.
+There will be several Python projects that you will complete in the Friday Sections in groups of size 1-3. Everyone needs to submit their own code, however, to get credit; you need to report who was in your group. You are welcome to work on the projects alone, but encouraged to work in teams. The goal will be to have 1-2 graded Python notebooks per module.
 
 ### Exam
 There will be two exams in this class: midterm (~5-6th week) and final (last week). 
@@ -59,25 +59,22 @@ Whenever you receive help from a third-party source, **please cite any help that
 
 Ultimately, **the goal of enrolling in this course is for _you_ to learn this material**, so that you will be prepared for exams, for research, for job interviews, etc.  Engaging in academic misconduct does not help you towards that goal. If you are in doubt about what might constitute cheating, send the course staff an email describing the situation and we will be happy to clarify it for you.
 
-
 ## Course Tools
 
 This quarter, we will use a number of different tools in EE345. Reach out to the course staff if you have questions about using any of them.
 
 ### Zoom
-We will have a single [Zoom link](
-) for the course. This will be used for remote
+We will have a single [Zoom link](https://washington.zoom.us/j/95494709719) for the course. This will be used for remote
 lecture sessions as well as for office hours. 
 
 ### Canvas
 Like many other courses, we are mainly using [Canvas](https://canvas.uw.edu/courses/1860120) as a gradebook and a place to find lecture recordings. Please refer to the course website for most course information, including assignment specs and due dates. Recordings will be linked from the course website to Canvas or Google Drive where they are hosted.
 
 ### Chat/Online Discussions
- We are considering establishing a [Discord]() server or using the chat feature in canvas; we will let you all know after we query the class to see the main preference.  Both Adhyyan (TA) and I will strive to be active on the discussion board, answering questions on homework and lecture content. 
+ We are considering establishing a [Discord](https://discord.gg/RFyExHSZuS) server or using the chat feature in canvas; we will let you all know after we query the class to see the main preference.  Both Adhyyan (TA) and I will strive to be active on the discussion board, answering questions on homework and lecture content. 
 
 ### Gradescope
-We will only use [gradescope](https://www.gradescope.com/courses/1140040) for uploading the exam. All other assignments will
-be uploaded to canvas. 
+We will use [gradescope](https://www.gradescope.com/courses/1140040) for grading exams, homework, and python exercises. Only the self-grade homework quizzes will be submitted on canvas. 
 
 ## Getting Help from Staff & Peers
 
@@ -99,13 +96,13 @@ Typically, extenuating circumstances include work-school balance, familial respo
 
 Life happens! While our focus is providing an excellent educational environment, our course does not exist in a vacuum. Our ultimate goal as a course staff is to provide you with the ability to be successful, and we encourage you to work with us to make that happen.
 
-### Disabilities
-Your experience in this class should not be affected by any disabilities that you may have. The [Disability Resources for Students](http://depts.washington.edu/uwdrs/) (DRS) office can help you establish accommodations with the course staff.
+### DRS Accommodations 
+The [Disability Resources for Students](http://depts.washington.edu/uwdrs/) (DRS) office can help you establish accommodations with the course staff.
 
-??? "DRS Instructions for Students</summary>"
+
     If you have already established accommodations with DRS, please communicate your approved accommodations to the lecturers at your earliest convenience so we can discuss your needs in this course.
 
-    If you have not yet established services through DRS, but have a temporary health condition or permanent disability that requires accommodations (conditions include but not limited to; mental health, attention-related, learning, vision, hearing, physical or health impacts), you are welcome to contact DRS. DRS offers resources and coordinates reasonable accommodations for students with disabilities and/or temporary health conditions.
+    If you have not yet established services through DRS, but have a temporary or permenent health condition that requires accommodations (conditions include but not limited to; mental health, attention-related, learning, vision, hearing, physical or health impacts), you are welcome to contact DRS. DRS offers resources and coordinates reasonable accommodations for students with a diverse array of needs.
 
     Reasonable accommodations are established through an interactive process between you, your lecturer(s) and DRS. It is the policy and practice of the University of Washington to create inclusive and accessible learning environments consistent with federal and state law.
 
@@ -113,6 +110,5 @@ Your experience in this class should not be affected by any disabilities that yo
 Washington state law requires that UW develop a policy for accommodation of student absences or significant hardship due to reasons of faith or conscience, or for organized religious activities. The UW’s policy, including more information about how to request an accommodation, is available at [Religious Accommodations Policy](https://registrar.washington.edu/staffandfaculty/religious-accommodations-policy/). Accommodations must be requested within the first two weeks of this course using the [Religious Accommodations Request form](https://registrar.washington.edu/students/religious-accommodations-request/).
 
 ### Inclusion
-Our code and our projects are made better by considering a variety of viewpoints. Your course staff is committed to the values outlined in the [University's inclusiveness statement](https://hr.uw.edu/diversity/hiring/dei-commitment-statement/), and you are expected to uphold a supportive and inclusive learning environment.
-
+Our code and our projects are made better by considering a variety of viewpoints. 
 If, at any point, you are made to feel uncomfortable, disrespected, or excluded by a staff member or fellow student, please report the incident so that we may address the issue and maintain a supportive and inclusive learning environment. Should you feel uncomfortable bringing up an issue with a staff member directly, you may consider contacting the [Office of the Ombud](https://www.washington.edu/ombud/).

@@ -22,7 +22,7 @@ schedule:
         resources:
           resources:
             self-grade guide: /homework/SelfGradeGuide.pdf
-      - title: Course Overview & Data Fitting
+      - title: Data Fitting Concepts & k-Means
         resources:
           worksheet:
             blank: TBA
