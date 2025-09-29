@@ -37,7 +37,19 @@ def define_env(env):
     @env.macro
     def parse_date(date):
         if isinstance(date, str):
-            return datetime.strptime(date, "%Y-%m-%d")
+            # Handle dates without leading zeros
+            try:
+                return datetime.strptime(date, "%Y-%m-%d")
+            except ValueError:
+                # Try to parse date with flexible format
+                parts = date.split('-')
+                if len(parts) == 3:
+                    year, month, day = parts
+                    # Add leading zeros if needed
+                    month = month.zfill(2)
+                    day = day.zfill(2)
+                    return datetime.strptime(f"{year}-{month}-{day}", "%Y-%m-%d")
+                raise
         elif isinstance(date, datetime):
             return date
         elif hasattr(date, 'year') and hasattr(date, 'month') and hasattr(date, 'day'):
