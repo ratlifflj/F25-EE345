@@ -1,5 +1,5 @@
 schedule:
-  start: 2025-9-23 # Shared across all schedule files
+  start: 2025-9-22 # Shared across all schedule files
   start_indices:
     lecture: 1
   defaults:
