@@ -2,7 +2,6 @@ from datetime import datetime
 
 import jinja2
 from jinja2 import pass_context
-from markupsafe import Markup
 from dateutil import rrule
 from markdown import Markdown
 
@@ -26,7 +25,7 @@ def define_env(env):
             extensions=env.conf['markdown_extensions'],
             extension_configs=env.conf['mdx_configs'] or {}
         )
-        return Markup(md.convert(text))
+        return jinja2.Markup(md.convert(text))
     # env.filters["markdown"] = env.conf["plugins"]["markdown-filter"].md_filter
 
     @env.macro
@@ -36,27 +35,7 @@ def define_env(env):
 
     @env.macro
     def parse_date(date):
-        if isinstance(date, str):
-            # Handle dates without leading zeros
-            try:
-                return datetime.strptime(date, "%Y-%m-%d")
-            except ValueError:
-                # Try to parse date with flexible format
-                parts = date.split('-')
-                if len(parts) == 3:
-                    year, month, day = parts
-                    # Add leading zeros if needed
-                    month = month.zfill(2)
-                    day = day.zfill(2)
-                    return datetime.strptime(f"{year}-{month}-{day}", "%Y-%m-%d")
-                raise
-        elif isinstance(date, datetime):
-            return date
-        elif hasattr(date, 'year') and hasattr(date, 'month') and hasattr(date, 'day'):
-            # Handle date objects by converting to datetime
-            return datetime(date.year, date.month, date.day)
-        else:
-            raise TypeError(f"parse_date expects a string or date-like object, got {type(date)}")
+        return datetime.strptime(date, "%Y-%m-%d")
 
     @env.macro
     def dates_gen(start, days):
@@ -66,19 +45,6 @@ def define_env(env):
         rs = rrule.rruleset()
         rs.rrule(r)
         return iter(rs)
-
-    @env.macro
-    def get_date_str(date):
-        """Get date as YYYY-MM-DD string"""
-        return date.strftime("%Y-%m-%d")
-
-    # Add this new macro to help with URL formatting
-    @env.macro
-    def format_resource_url(url_template, **kwargs):
-        """Format a resource URL with date string and other variables"""
-        if '{date_str}' in url_template and 'date' in kwargs:
-            kwargs['date_str'] = get_date_str(kwargs['date'])
-        return url_template.format(**kwargs)
 
     @env.macro
     def dates_gen_with_dummies(start, days):
@@ -92,13 +58,6 @@ def define_env(env):
         rs.rrule(r)
         rs.rrule(r_dummy)
         return iter(rs)
-
-    @env.macro
-    def filedate(date):
-        """Format a date as YYYY-MM-DD for filenames"""
-        if isinstance(date, str):
-            date = parse_date(date)
-        return date.strftime("%Y-%m-%d")
 
     # Only update collections if the plugin is present
     if 'collections' in env.conf['plugins']:
