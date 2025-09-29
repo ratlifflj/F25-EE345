@@ -35,9 +35,9 @@ def define_env(env):
 
     @env.macro
     def parse_date(date):
-        if isinstance(date, str):
-            return date #datetime.strptime(date, "%Y-%m-%d")
-        elif hasattr(date, 'year') and hasattr(date, 'month') and hasattr(date, 'day'):
+        #if isinstance(date, str):
+        #    return date #datetime.strptime(date, "%Y-%m-%d")
+        if hasattr(date, 'year') and hasattr(date, 'month') and hasattr(date, 'day'):
             return datetime(date.year, date.month, date.day)
         else:
             raise TypeError(f"Expected string or date-like object, got {type(date)}")
