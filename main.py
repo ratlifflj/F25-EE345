@@ -72,6 +72,14 @@ def define_env(env):
         """Get date as YYYY-MM-DD string"""
         return date.strftime("%Y-%m-%d")
 
+    # Add this new macro to help with URL formatting
+    @env.macro
+    def format_resource_url(url_template, **kwargs):
+        """Format a resource URL with date string and other variables"""
+        if '{date_str}' in url_template and 'date' in kwargs:
+            kwargs['date_str'] = get_date_str(kwargs['date'])
+        return url_template.format(**kwargs)
+
     @env.macro
     def dates_gen_with_dummies(start, days):
         r = rrule.rrule(rrule.DAILY,
