@@ -38,6 +38,11 @@ def define_env(env):
     def parse_date(date):
         return datetime.strptime(date, "%Y-%m-%d")
 
+    @env.filter
+    def dateonly(date):
+        """Format a date as YYYY-MM-DD without time"""
+        return date.strftime("%Y-%m-%d")
+
     @env.macro
     def dates_gen(start, days):
         r = rrule.rrule(rrule.DAILY,
