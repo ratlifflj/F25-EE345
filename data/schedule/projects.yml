@@ -4,6 +4,10 @@ schedule:
   projects:
     default_type: project
     entries:
+      - title: Mod0 Welcome!
+        url: https://washington.zoom.us/rec/share/lPubpqJzHIpiCCG4__P2rSYA_CgbX7nvpspMN0uf2WC-0oeunm2sB-DjwYKQOH63.54QZ8E5bQGiYmLoL
+        start: 2025-9-24
+        end: 2025-9-26
       - title: Mod1 Data Fitting Concepts 
         url: TBA
         start: 2025-9-29
