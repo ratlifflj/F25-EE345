@@ -37,8 +37,6 @@ schedule:
       # 2
       - title: "Data Fitting Concepts I"
         resources:
-          annotations:
-            pdf: /lectures/F25EE345_Lecture_2_2025-09-29.pdf
           resources:
             recording: TBA
       - title: "Data Fitting Concepts II"
