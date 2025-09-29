@@ -22,10 +22,9 @@ theme:
   favicon: false
 
   external_links:
-    Lecture Recordings: https://uw.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=b2c37b96-31eb-4060-9342-adce0142c577
-    Zoom Link:  https://washington.zoom.us/j/93892460942 
-    Gradescope: &gradescope https://www.gradescope.com/courses/337452
-    Discord Link: https://discord.gg/kEQyUWwKM7
+    Zoom Link:  https://washington.zoom.us/j/95494709719
+    Gradescope: &gradescope https://www.gradescope.com/courses/1140040
+    Discord Link: https://discord.gg/RFyExHSZuS 
   nav_footer_content: "[Acknowledgements](acknowledgements.md)"
 
 markdown_extensions:
