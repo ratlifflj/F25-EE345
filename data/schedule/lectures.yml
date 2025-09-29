@@ -32,6 +32,7 @@ schedule:
       # 1
       - title: "Start of Fall Quarter"
         resources:
+          resources:
       # 2
       - title: "Data Fitting Concepts I"
         resources:
