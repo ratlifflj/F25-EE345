@@ -92,8 +92,10 @@ plugins:
   - bootstrap-tables
   - collections: # must load before macros
       collections:
-        announcements: {}
-        staff: {}
+        announcements:
+          output: true
+        staff: 
+          output: true
   - auto-nav
   - macros:
       include_dir: includes
