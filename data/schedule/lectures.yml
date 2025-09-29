@@ -7,9 +7,17 @@ schedule:
       resources: # Links always relative to schedule's page
         slides:
           pdf: /lectures/F25EE345_Lecture_{num}.pdf
+        annotations:
+          pdf: /lectures/F25EE345_Lecture_{num}_{date}.pdf
   styles:
     resources:
       slides:
+        resource-links:
+          - btn-group
+        resource-link:
+          - btn
+          - btn-resource
+      annotations:
         resource-links:
           - btn-group
         resource-link:
@@ -29,7 +37,6 @@ schedule:
       - title: "Data Fitting Concepts I"
         resources:
           resources:
-            annotations: /lectures/F25EE345_Lecture_2_20250929.pdf
             recording: TBA
       - title: "Data Fitting Concepts II"
         resources:

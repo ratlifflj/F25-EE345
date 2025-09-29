@@ -39,6 +39,13 @@ def define_env(env):
         return datetime.strptime(date, "%Y-%m-%d")
 
     @env.macro
+    def format_date(date):
+        """Format a date as YYYY-MM-DD for filenames"""
+        if isinstance(date, str):
+            date = parse_date(date)
+        return date.strftime("%Y-%m-%d")
+
+    @env.macro
     def dates_gen(start, days):
         r = rrule.rrule(rrule.DAILY,
                         byweekday=[DAYS_OF_THE_WEEK[d] for d in days],
