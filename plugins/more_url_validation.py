@@ -10,7 +10,7 @@ from jinja2 import pass_context
 import mkdocs
 from markdown import Extension
 from markdown.treeprocessors import Treeprocessor
-from mkdocs.utils import path_to_url, warning_filter
+from mkdocs.utils import warning_filter
 
 log = logging.getLogger(f"mkdocs.custom_plugins.{__name__}")
 log.addFilter(warning_filter)
@@ -65,7 +65,7 @@ def normalize_url(url, files, page=None, site_url='',
     """
     Return (absolute url using the site url, url should open in new page (is external or non-html).
     """
-    url = path_to_url(url or '.')
+    url = url or '.'  # Default to current directory if no URL provided
     # Allow links to be fully qualified URLs or the current page
     scheme, netloc, path, params, query, fragment = urlparse(url)
     if scheme or netloc:
