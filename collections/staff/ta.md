@@ -1,10 +1,9 @@
 ---
 name: TBD
 role: Teaching Assistant
-email: TBD
-pronouns: they/their
-website:
-photo: dummy.png
+email: Adhyyan Narang
+website: https://adhyyannarang.com/
+photo: adhyyan.jpg
 ---
 
 I am a stick figure.
