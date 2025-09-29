@@ -2,7 +2,6 @@
 name: Lillian Ratliff
 role: Instructor
 email: ratliffl@uw.edu
-pronouns: she/her
 website:
 photo: ljr.jpg
 ---
