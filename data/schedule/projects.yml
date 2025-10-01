@@ -8,9 +8,17 @@ schedule:
         url: https://washington.zoom.us/rec/share/lPubpqJzHIpiCCG4__P2rSYA_CgbX7nvpspMN0uf2WC-0oeunm2sB-DjwYKQOH63.54QZ8E5bQGiYmLoL
         start: 2025-9-24
         end: 2025-9-26
-      - title: Mod1 Data Fitting Concepts 
+      - title: Mod1-L1 Data Fitting Concepts I
         url: https://washington.zoom.us/rec/share/plmlTWx9GRiT3xc7NeQrjhD45NA38aZGyEQV-CbmRNMOEAbug2KwEqB4xOhWQUE.j0TfEy_hrYsUL3KX?startTime=1759165686000
         start: 2025-9-29
         end: 2025-10-01
+      - title: Mod1-L2 Data Fitting Concepts II
+        url: https://washington.zoom.us/rec/share/fqS69Z7lgq4CmaUQNC95GOlR5KTZ1IhgFt8fZVcWNeHavLM1FKsGWrisP2whD4jR.IrX60oyw3Mb4qum6
+        start: 2025-10-01
+        end: 2025-10-03
+      - title: Mod1-L3 Data Fitting Concepts III
+        url: 
+        start: 2025-10-06
+        end: 2025-10-08
 
 
