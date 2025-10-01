@@ -3,11 +3,11 @@ title: Homework
 nav_order: 3
 ---
 
-**HW 1** (Due Wed, Oct 8 11:59pm PDT)
+### **HW 1** (Due Wed, Oct 8 11:59pm PDT)
 
-- Link to PDF: 
-- Submit to Gradescope by 2025-10-08: 
-- Submit self-grade quiz on canvas by 2025-10-13:
+- Link to PDF: [hw1.pdf](/homework/hw1.pdf)
+- Submit to Canvas by 2025-10-08: [assignment link](https://canvas.uw.edu/courses/1860120/assignments/10759294)
+- Submit self-grade quiz on Canvas by 2025-10-13:
 
 
 ## Self-Assessment
