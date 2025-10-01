@@ -2,11 +2,6 @@ site_name: EE345
 site_url: https://ratlifflj.github.io/F25-EE345
 
 docs_dir: src
-
-google_analytics:
-  - UA-170238427-1
-  - auto
-
 theme:
   name: null
   custom_dir: theme
@@ -88,14 +83,12 @@ plugins:
         *[TA]:
         *[TAs]:
         *[UW]:
+  - collections:
+      collections:
+        announcements: {}
+        staff: {}
   - markdown-filter
   - bootstrap-tables
-  - collections: # must load before macros
-      collections:
-        announcements:
-          output: true
-        staff: 
-          output: true
   - auto-nav
   - macros:
       include_dir: includes

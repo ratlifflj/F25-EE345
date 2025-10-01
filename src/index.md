@@ -10,19 +10,6 @@ extra_css: ['schedule.scss']
 ---
 
 
-## Announcements {: .mt-4 }
-{% for announcement in (announcements | sort(attribute="meta.date", reverse=True))[:3] %}
-{% if loop.first %}
-{% set expand = True %}
-{% endif %}
-{% include 'announcement.html' %}
-{% endfor %}
-
-{% if announcements | length >= 0 %}
-[All Announcements](/announcements.md){: .btn .btn-373 .fs-3}
-{% endif %}
-
-
 {# build up list of days #}
 
 {% set assignment_abbr = {"project": "P", "homework": "H"} %}

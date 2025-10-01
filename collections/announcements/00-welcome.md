@@ -1,6 +1,6 @@
 ---
 title: Welcome to EE345!
-date: 2025-09-22
+date: 2025-09-24
 ---
 We're excited to be working with you this quarter. 
 

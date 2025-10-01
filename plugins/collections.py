@@ -3,6 +3,7 @@ from pathlib import Path
 
 import mkdocs
 from mkdocs.structure.files import File, Files
+from mkdocs.utils import get_relative_url
 
 
 class CollectionsPlugin(mkdocs.plugins.BasePlugin):
@@ -33,21 +34,26 @@ class CollectionsPlugin(mkdocs.plugins.BasePlugin):
         for collection_name in self.config['collections']:
             for file in Path(self.config['collections_dir'], collection_name).iterdir():
                 if file.is_file():
-                    # rel_path = file.relative_to(project_dir)
-                    f = File(str(file),
-                             str(project_dir),
-                             config['site_dir'],
-                             config['use_directory_urls'])
+                    # Create destination path that includes collection name
+                    dest_path = Path(collection_name) / file.name
+                    f = File(
+                        str(file),
+                        str(project_dir),
+                        config['site_dir'],
+                        config['use_directory_urls']
+                    )
+                    # Set the URL to include the collection name
+                    f.url = get_relative_url(str(dest_path), '')
                     files_list.append(f)
                     self.file_to_collection[str(file.resolve())] = collection_name
 
         return Files(files_list + list(files))
-        # # hack to ensure collections get processed first
-        # files._files = files_list + files._files
-        # files.src_paths.update({file.src_path: file for file in files_list})
 
     def on_page_markdown(self, markdown, page, config, files):
         collection_name = self.file_to_collection.get(page.file.abs_src_path, None)
         if collection_name:
             self.collections[collection_name].append(page)
             page.meta['template'] = 'noop.html'
+            # Ensure the page URL is properly prefixed with collection name
+            if not page.url.startswith(f'{collection_name}/'):
+                page.url = f'{collection_name}/{page.url}'
