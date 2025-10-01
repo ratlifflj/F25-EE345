@@ -38,17 +38,22 @@ schedule:
             pdf: None
           resources:
       # 2
+      - title: "Welcome to EE345"
+        resources:
+          annotations:
+            pdf: None
+          resources:
+            recording: https://washington.zoom.us/rec/share/plmlTWx9GRiT3xc7NeQrjhD45NA38aZGyEQV-CbmRNMOEAbug2KwEqB4xOhWQUE.j0TfEy_hrYsUL3KX?startTime=1759165686000
       - title: "Data Fitting Concepts I"
         resources:
           annotations:
             pdf: /lectures/F25EE345_Lecture_2_2025-09-29.pdf
           resources:
-            recording: https://washington.zoom.us/rec/share/plmlTWx9GRiT3xc7NeQrjhD45NA38aZGyEQV-CbmRNMOEAbug2KwEqB4xOhWQUE.j0TfEy_hrYsUL3KX?startTime=1759165686000
+            recording: 
       - title: "Data Fitting Concepts II"
         resources:
           resources:
             recording: 
-
 
 
 
