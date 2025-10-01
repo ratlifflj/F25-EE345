@@ -52,8 +52,10 @@ schedule:
             recording: 
       - title: "Data Fitting Concepts II"
         resources:
+          annotations:
+            pdf: /lectures/F25EE345_Lecture_3_20251001.pdf
           resources:
-            recording: 
+            recording: https://washington.zoom.us/rec/share/fqS69Z7lgq4CmaUQNC95GOlR5KTZ1IhgFt8fZVcWNeHavLM1FKsGWrisP2whD4jR.IrX60oyw3Mb4qum6
 
 
 
