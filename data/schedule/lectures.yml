@@ -59,10 +59,10 @@ schedule:
       - title: "Data Fitting Concepts III"
         resources:
           annotations:
-            pdf: 
+            pdf: /lectures/F25EE345_Lecture_4_20251006.pdf
           resources:
             recording: 
-      - title: "Regression"
+      - title: "Data Fitting Concepts III" 
         resources:
           annotations:
             pdf: 
