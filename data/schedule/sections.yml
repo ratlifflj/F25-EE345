@@ -24,11 +24,9 @@ schedule:
             self-grade guide: /homework/SelfGradeGuide.pdf
       - title: Data Fitting Concepts & k-Means
         resources:
-          worksheet:
-            blank: TBA
-            solution: TBA
+          resources:
+      - title: TBA
+        resources:
           resources:
             recorded sec: TBA
-            zoom: TBA
-            self-grade guide: /homework/SelfGradeGuide.pdf
 
