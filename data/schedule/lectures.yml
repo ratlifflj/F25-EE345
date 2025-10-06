@@ -44,25 +44,25 @@ schedule:
             pdf: None
           resources:
             recording: https://washington.zoom.us/rec/share/plmlTWx9GRiT3xc7NeQrjhD45NA38aZGyEQV-CbmRNMOEAbug2KwEqB4xOhWQUE.j0TfEy_hrYsUL3KX?startTime=1759165686000
-      - title: "Data Fitting Concepts I"
+      - title: "Data Fitting I: Vectors & Norms"
         resources:
           annotations:
             pdf: /lectures/F25EE345_Lecture_2_2025-09-29.pdf
           resources:
             recording: 
-      - title: "Data Fitting Concepts II"
+      - title: "Data Fitting II: Norms & Inner Products"
         resources:
           annotations:
             pdf: /lectures/F25EE345_Lecture_3_20251001.pdf
           resources:
             recording: https://washington.zoom.us/rec/share/fqS69Z7lgq4CmaUQNC95GOlR5KTZ1IhgFt8fZVcWNeHavLM1FKsGWrisP2whD4jR.IrX60oyw3Mb4qum6
-      - title: "Data Fitting Concepts III (k-means)"
+      - title: "Data Fitting III: k-means"
         resources:
           annotations:
             pdf: /lectures/F25EE345_Lecture_4_20251006.pdf
           resources:
             recording: https://washington.zoom.us/rec/share/-oVATldDVNh9JTeat7c2oeCnm9ihxrp5lffcyRYtgU5B38jLeW9C1VNOELfP8W0j.ZZez-DsSDnMfDm8G?startTime=1759768368000
-      - title: "Data Fitting Concepts IV (k-NN & Standardization)" 
+      - title: "Data Fitting IV: k-NN & Standardization" 
         resources:
           annotations:
             pdf: 
