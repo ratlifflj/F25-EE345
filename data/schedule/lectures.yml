@@ -56,13 +56,13 @@ schedule:
             pdf: /lectures/F25EE345_Lecture_3_20251001.pdf
           resources:
             recording: https://washington.zoom.us/rec/share/fqS69Z7lgq4CmaUQNC95GOlR5KTZ1IhgFt8fZVcWNeHavLM1FKsGWrisP2whD4jR.IrX60oyw3Mb4qum6
-      - title: "Data Fitting Concepts III"
+      - title: "Data Fitting Concepts III (k-means)"
         resources:
           annotations:
             pdf: /lectures/F25EE345_Lecture_4_20251006.pdf
           resources:
             recording: https://washington.zoom.us/rec/share/-oVATldDVNh9JTeat7c2oeCnm9ihxrp5lffcyRYtgU5B38jLeW9C1VNOELfP8W0j.ZZez-DsSDnMfDm8G?startTime=1759768368000
-      - title: "Data Fitting Concepts IV" 
+      - title: "Data Fitting Concepts IV (k-NN & Standardization)" 
         resources:
           annotations:
             pdf: 
