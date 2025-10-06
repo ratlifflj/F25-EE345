@@ -62,7 +62,7 @@ schedule:
             pdf: /lectures/F25EE345_Lecture_4_20251006.pdf
           resources:
             recording: 
-      - title: "Data Fitting Concepts III" 
+      - title: "Data Fitting Concepts IV" 
         resources:
           annotations:
             pdf: 
