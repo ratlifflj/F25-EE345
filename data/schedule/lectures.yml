@@ -62,7 +62,12 @@ schedule:
             pdf: 
           resources:
             recording: 
-
+      - title: "Regression"
+        resources:
+          annotations:
+            pdf: 
+          resources:
+            recording: 
 
 
 
