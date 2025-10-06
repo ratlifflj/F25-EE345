@@ -17,8 +17,12 @@ schedule:
         start: 2025-10-01
         end: 2025-10-03
       - title: Mod1-L3 Data Fitting Concepts III
-        url: 
+        url: https://washington.zoom.us/rec/share/-oVATldDVNh9JTeat7c2oeCnm9ihxrp5lffcyRYtgU5B38jLeW9C1VNOELfP8W0j.ZZez-DsSDnMfDm8G?startTime=1759768368000
         start: 2025-10-06
         end: 2025-10-08
+      - title: Mod1-L4 Data Fitting Concepts IV
+        url: 
+        start: 2025-10-08
+        end: 2025-10-10
 
 
