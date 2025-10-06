@@ -61,7 +61,7 @@ schedule:
           annotations:
             pdf: /lectures/F25EE345_Lecture_4_20251006.pdf
           resources:
-            recording: 
+            recording: https://washington.zoom.us/rec/share/-oVATldDVNh9JTeat7c2oeCnm9ihxrp5lffcyRYtgU5B38jLeW9C1VNOELfP8W0j.ZZez-DsSDnMfDm8G?startTime=1759768368000
       - title: "Data Fitting Concepts IV" 
         resources:
           annotations:
