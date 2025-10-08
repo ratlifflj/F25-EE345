@@ -1,5 +1,4 @@
 # EE345 Website
-
 This repo contains the course website for EE345. Content for this website is almost entirely written in Markdown, and a Gitlab CI runner automatically deploys the contents of this repo to the web. The template was borrowed from the CSE 373 course website and has been modified  specifically for 547.
 
 This website was originally developed by Brian Chan, Howard Xiao, and Aaron Johnston in 20su (CSE273).
