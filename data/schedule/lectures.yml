@@ -9,6 +9,7 @@ schedule:
           pdf: /lectures/F25EE345_Lecture_{num}.pdf
         annotations:
           pdf: /lectures/F25EE345_Lecture_{num}_{date}.pdf
+          typeset: /lectures/F25EE345_Lecture_{num}_{date}_typeset.pdf
   styles:
     resources:
       slides:
@@ -60,12 +61,14 @@ schedule:
         resources:
           annotations:
             pdf: /lectures/F25EE345_Lecture_4_20251006.pdf
+            typeset: /lectures/F25EE345_Lecture_5_20251008_typeset.pdf
           resources:
             recording: https://washington.zoom.us/rec/share/-oVATldDVNh9JTeat7c2oeCnm9ihxrp5lffcyRYtgU5B38jLeW9C1VNOELfP8W0j.ZZez-DsSDnMfDm8G?startTime=1759768368000
       - title: "Data Fitting IV: k-NN & Standardization" 
         resources:
           annotations:
-            pdf: 
+            pdf: /lectures/F25EE345_Lecture_5_20251008.pdf 
+            typeset: /lectures/F25EE345_Lecture_5_20251008_typeset.pdf
           resources:
             recording: https://washington.zoom.us/rec/share/PBJyPYn5DyH079kTzMRVxUd5ZuQQYL-YLv2AkIYdlxmehYNUWQd3RvHDIa7VYPm1.GPr-56TuzPPq0dEt?startTime=1759942703000
 
