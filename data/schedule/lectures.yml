@@ -71,13 +71,18 @@ schedule:
             typeset: /lectures/F25EE345_Lecture_5_20251008_typeset.pdf
           resources:
             recording: https://washington.zoom.us/rec/share/PBJyPYn5DyH079kTzMRVxUd5ZuQQYL-YLv2AkIYdlxmehYNUWQd3RvHDIa7VYPm1.GPr-56TuzPPq0dEt?startTime=1759942703000
-      - title: "Linear Regression I: Least Squares Opt"
+      - title: "Linear Models I: Least Squares Opt"
+        resources:
+          annotations:
+            pdf: /lectures/F25EE345_Lecture_6_20251013.pdf  
+          resources:
+            recording: https://washington.zoom.us/rec/share/Wi2qF3ExEZbg5anHWYyv4UHeXn7TRTrtEjIkr6d6F3QTJwt7bzrppViMF2ldoZc.Xa4sDN6Zm8xVPw9Q?startTime=1760374804000
+      - title: "Linear Models II: Least Squares Opt"
         resources:
           annotations:
             pdf: 
           resources:
             recording:
-
 
 
 
