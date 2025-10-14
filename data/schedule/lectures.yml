@@ -60,7 +60,7 @@ schedule:
           annotations:
             pdf: /lectures/F25EE345_Lecture_2_2025-09-29.pdf
           video:
-            recording: 
+            recording: https://washington.zoom.us/rec/share/xImfm7GZvRzW13T10Qsujsc27q8PnpwBFznzwFS6bavPskGBtsKELWmFW8L_s5k.tH4wZfz02C4gbdHE?startTime=1759165686000
       - title: "Data Fitting II: Norms & Inner Products"
         resources:
           annotations:
