@@ -33,11 +33,8 @@ schedule:
       # 1
       - title: "Start of Fall Quarter"
         resources:
-          slides:
-            pdf: null
-          annotations:
-            pdf: null
-          resources:
+          slides: ""
+          annotations: ""
       # 2
       - title: "Welcome to EE345"
         resources:
