@@ -3,7 +3,7 @@ mkdocs-material>=9.5
 click
 future
 htmlmin
-Jinja2
+Jinja2<3.1
 joblib
 jsmin
 libsass
@@ -31,3 +31,4 @@ six
 termcolor
 tornado
 tqdm
+markdown-katex
