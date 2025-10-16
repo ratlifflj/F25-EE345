@@ -9,6 +9,7 @@ schedule:
           pdf: /lectures/F25EE345_Lecture_{num}.pdf
         annotations:
           pdf: /lectures/F25EE345_Lecture_{num}_{date}.pdf
+          typeset: /lectures/F25EE345_Lecture_{num}_{date}_typeset.pdf
   styles:
     resources:
       slides:
@@ -24,7 +25,20 @@ schedule:
           - btn
           - btn-resource
           - fa-pencil-square-o
-
+      typeset:
+        resource-links:
+          - btn-group
+        resource-link:
+          - btn
+          - btn-resource
+          - fa-file-text-o
+      video:
+        resource-links:
+          - btn-group
+        resource-link:
+          - btn
+          - btn-resource
+          - video
   lectures:
     days: ["Mon", "Wed"]
     default_type: lecture
@@ -32,46 +46,61 @@ schedule:
       # 1
       - title: "Start of Fall Quarter"
         resources:
-          slides:
-            pdf: None
-          annotations:
-            pdf: None
-          resources:
+          slides: ""
+          annotations: ""
       # 2
       - title: "Welcome to EE345"
         resources:
           annotations:
             pdf: None
-          resources:
+          video:
             recording: https://washington.zoom.us/rec/share/plmlTWx9GRiT3xc7NeQrjhD45NA38aZGyEQV-CbmRNMOEAbug2KwEqB4xOhWQUE.j0TfEy_hrYsUL3KX?startTime=1759165686000
       - title: "Data Fitting I: Vectors & Norms"
         resources:
           annotations:
             pdf: /lectures/F25EE345_Lecture_2_2025-09-29.pdf
-          resources:
-            recording: 
+          video:
+            recording: https://washington.zoom.us/rec/share/xImfm7GZvRzW13T10Qsujsc27q8PnpwBFznzwFS6bavPskGBtsKELWmFW8L_s5k.tH4wZfz02C4gbdHE?startTime=1759165686000
       - title: "Data Fitting II: Norms & Inner Products"
         resources:
           annotations:
             pdf: /lectures/F25EE345_Lecture_3_20251001.pdf
-          resources:
+          video:
             recording: https://washington.zoom.us/rec/share/fqS69Z7lgq4CmaUQNC95GOlR5KTZ1IhgFt8fZVcWNeHavLM1FKsGWrisP2whD4jR.IrX60oyw3Mb4qum6
       - title: "Data Fitting III: k-means"
         resources:
           annotations:
             pdf: /lectures/F25EE345_Lecture_4_20251006.pdf
-          resources:
+          typeset: 
+            pdf: /lectures/F25EE345_Lecture_5_20251008_typeset.pdf
+          video:
             recording: https://washington.zoom.us/rec/share/-oVATldDVNh9JTeat7c2oeCnm9ihxrp5lffcyRYtgU5B38jLeW9C1VNOELfP8W0j.ZZez-DsSDnMfDm8G?startTime=1759768368000
       - title: "Data Fitting IV: k-NN & Standardization" 
         resources:
           annotations:
+            pdf: /lectures/F25EE345_Lecture_5_20251008.pdf 
+          typeset: 
+            pdf: /lectures/F25EE345_Lecture_5_20251008_typeset.pdf
+          video:
+            recording: https://washington.zoom.us/rec/share/PBJyPYn5DyH079kTzMRVxUd5ZuQQYL-YLv2AkIYdlxmehYNUWQd3RvHDIa7VYPm1.GPr-56TuzPPq0dEt?startTime=1759942703000
+      - title: "Linear Models I: Why Linear Models?"
+        resources:
+          annotations:
+            pdf: /lectures/F25EE345_Lecture_6_20251013.pdf  
+          video:
+            recording: https://washington.zoom.us/rec/share/Wi2qF3ExEZbg5anHWYyv4UHeXn7TRTrtEjIkr6d6F3QTJwt7bzrppViMF2ldoZc.Xa4sDN6Zm8xVPw9Q?startTime=1760374804000
+      - title: "Linear Models II: Vector Calc Review"
+        resources:
+          annotations:
+            pdf: /lectures/F25EE345_Lecture_7_annotated_20251015.pdf 
+          video:
+            recording: https://washington.zoom.us/rec/share/PRK0kksfXU8erP_s6naW_ZhjGo-sqCc3HgjIhlxe-p3cTHO3wBx13iMeZvykh8sF._aQADQyEOpPPG2wM?startTime=1760547600000
+      - title: "Linear Models III: Least Squares Opt"
+        resources:
+          annotations:
             pdf: 
-          resources:
+          video:
             recording: 
-
-
-
-
 
 
             

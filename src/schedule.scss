@@ -293,6 +293,18 @@ td.module-inactive,, td.project-inactive, td.exercise-inactive {
             margin-right: 5px;
         }
 
+        &.video::before {
+            content: "";
+            position: relative;
+            display: inline-block;
+            background-image: url(img/video.png);
+            background-size: 16px 16px;
+            width: 16px;
+            height: 16px;
+            top: 2px;
+            margin-right: 5px;
+        }
+        
         &.blank::before {
             content: "";
             position: relative;

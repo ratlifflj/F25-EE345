@@ -5,10 +5,22 @@ nav_order: 3
 
 ### **HW 1** (Due Wed, Oct 8 11:59pm PDT)
 
-- Link to PDF: [hw1.pdf](/homework/hw1.pdf)
+- Link to PDF: [hw1.pdf](/F25-EE345/homework/hw1.pdf)
 - Submit to Canvas by 2025-10-08: [assignment link](https://canvas.uw.edu/courses/1860120/assignments/10759294)
-- Submit self-grade quiz on Canvas by 2025-10-13:
+- Submit self-grade quiz on Canvas by 2025-10-13, 11:59PM: [self-grade quiz link](https://canvas.uw.edu/courses/1860120/quizzes/2281975)
+- Homework solutions: [hw1_solutions.pdf](/F25-EE345/homework/hw1_solutions.pdf) 
 
+### **HW 2** (Due Wed, Oct 15 11:59pm PDT)
+
+- Link to PDF: [hw2.pdf](/F25-EE345/homework/hw2.pdf)
+- Submit to Canvas by 2025-10-15: [assignment link](https://canvas.uw.edu/courses/1860120/assignments/10774445)
+- Submit self-grade quiz on Canvas by 2025-10-20: [self-grade quiz](https://canvas.uw.edu/courses/1860120/quizzes/2283945)
+
+### **HW 3** (Due Wed, Oct 22 11:59pm PDT)
+
+- Link to PDF: [hw3.pdf](/F25-EE345/homework/hw3.pdf)
+- Submit to Canvas by 2025-10-22: [assignment link](https://canvas.uw.edu/courses/1860120/assignments/10788248)
+- Submit self-grade quiz on Canvas by 2025-10-27:
 
 ## Self-Assessment
 ### Rules of Engagement for Self-Assessment Portion:

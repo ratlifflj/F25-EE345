@@ -17,7 +17,8 @@ theme:
   favicon: false
 
   external_links:
-    Zoom Link:  https://washington.zoom.us/j/95494709719
+    Lecture Zoom Link:  https://washington.zoom.us/j/95494709719
+    OH Zoom Link: https://washington.zoom.us/j/92658306333
     Gradescope: &gradescope https://www.gradescope.com/courses/1140040
     Discord Link: https://discord.gg/RFyExHSZuS 
   nav_footer_content: "[Acknowledgements](acknowledgements.md)"
