@@ -26,8 +26,12 @@ schedule:
         resources:
           resources:
             slides: https://docs.google.com/presentation/d/1HIO6w9I0CSVwmHkkzIJY84t8N1l0B6ACYFJCn03ZzEM/edit?usp=sharing
-      - title: TBA
+      - title: kNN
         resources:
           resources:
-            recorded sec: TBA
+            slides: https://docs.google.com/presentation/d/1Q8y0dAJC86vGROHWiS1UqiP5SqZflCxztt40ZsnguPA/edit?slide=id.p#slide=id.p
+      - title: Least Squares
+        resources:
+          resources:
+            slides: https://docs.google.com/presentation/d/1UAjmWoSLQmHp_lGVIG10O5FtxQDSeJBlV6oxyPP7E4o/edit?slide=id.g38c55d042da_0_0#slide=id.g38c55d042da_0_0
 
