@@ -8,6 +8,7 @@ child_numbering_start: 0
 
 ## Week 1: k-Means & Python review
 This week we explore the following: 
+
 - Part I: `numpy` refresher. 
 - Part II: generate data for \(k\)-means.
 - Part III: implement \(k\)-means (Lloyd's algorithm). 
