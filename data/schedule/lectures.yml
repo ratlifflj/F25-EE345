@@ -101,7 +101,7 @@ schedule:
             pdf: /lectures/F25EE345_Lecture_8__M2-L3_20251020.pdf  
           video:
             recording: https://washington.zoom.us/rec/share/YyNsRdvyYx2pYzJJ8zjzzMPEHnDa_mzMF8qJ6q60msx5xrW7B1k-W8MtUgf2-OnP.7eZOgrqWD4OuZa68?startTime=1760979487000
-      - title: "Linear Models V: Solution to Linear Regression"
+      - title: "Linear Models IV: Solution to Linear Regression"
         resources:
           slides:
             pdf: /lectures/F25EE345_Lecture_9_skeleton.pdf
@@ -109,5 +109,16 @@ schedule:
             pdf:   
           video:
             recording:
-            
+      - title: "Linear Models V"
+        resources:
+          annotations:
+            pdf:   
+          video:
+            recording: 
+      - title: "Midterm Review"
+        resources:
+          annotations:
+            pdf:   
+          video:
+            recording:          
 
