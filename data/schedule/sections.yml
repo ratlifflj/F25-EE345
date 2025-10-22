@@ -26,7 +26,7 @@ schedule:
         resources:
           resources:
             slides: https://docs.google.com/presentation/d/1HIO6w9I0CSVwmHkkzIJY84t8N1l0B6ACYFJCn03ZzEM/edit?usp=sharing
-      - title: "Linear Models"
+      - title: "k-NN & Standardization"
         resources:
           resources:
             recorded sec: TBA
