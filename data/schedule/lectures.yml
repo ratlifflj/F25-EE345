@@ -106,7 +106,9 @@ schedule:
           slides:
             pdf: /lectures/F25EE345_Lecture_9_skeleton.pdf
           annotations:
-            pdf:   
+            pdf: /lectures/F25EE345_Lecture_9_20251022.pdf
+          typeset:
+            pdf: /lectures/F25EE345_Lecture_9__20251022_M2-L3-filled.pdf
           video:
             recording:
       - title: "Linear Models V"
