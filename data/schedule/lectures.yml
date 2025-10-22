@@ -110,7 +110,7 @@ schedule:
           typeset:
             pdf: /lectures/F25EE345_Lecture_9__20251022_M2-L3-filled.pdf
           video:
-            recording:
+            recording: https://washington.zoom.us/rec/share/ZJ1yBYvGqt1R53lBhEepIp85Q8B-mAqttlRtusjWd3r3VNv8pRdI0HlSZzORu43c.dwSlQRBq0eeufd4M
       - title: "Linear Models V"
         resources:
           annotations:
