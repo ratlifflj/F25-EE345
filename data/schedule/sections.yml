@@ -14,6 +14,33 @@ schedule:
         resource-link:
           - btn
           - btn-resource
+      slides:
+        resource-links:
+          - btn-group
+        resource-link:
+          - btn
+          - btn-resource
+      annotations:
+        resource-links:
+          - btn-group
+        resource-link:
+          - btn
+          - btn-resource
+          - fa-pencil-square-o
+      solutions:
+        resource-links:
+          - btn-group
+        resource-link:
+          - btn
+          - btn-resource
+          - fa-file-text-o
+      video:
+        resource-links:
+          - btn-group
+        resource-link:
+          - btn
+          - btn-resource
+          - video
   sections:
     days: ["Fri"]
     default_type: section
@@ -36,8 +63,14 @@ schedule:
             recorded sec: TBA
       - title: "Midterm Practice"
         resources:
+          slides:
+            pdf: /exams/EE345_10_24.pdf
+          worksheet:
+            pdf: /exams/F25EE345_midterm_skeleton.pdf
+          solutions:
+            pdf: /exams/F25EE345_midterm_solutions.pdf
           resources:
-            recorded sec: TBA
+            recorded sec: /exams/midterm_review_10_24_recording.mp4
       - title: "Midterm (In Class)"
         resources:
           resources:
