@@ -117,7 +117,7 @@ schedule:
             pdf: /lectures/F25EE345_Lecture_9_skeleton.pdf
           annotations:
             pdf: /lectures/F25EE345_Lecture_10_20251027_annotations.pdf
-          ty 
+          typeset:
             pdf: /lectures/F25EE345_Lecture_8-10_filled.pdf
           video:
             recording: 
