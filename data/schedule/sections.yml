@@ -68,7 +68,7 @@ schedule:
           worksheet:
             pdf: /exams/midterm_review.pdf
           solutions:
-            pdf: /exams/midterm_review_solns.pdf
+            pdf: /exams/midterm_review_sols.pdf
           resources:
             recorded sec: https://canvas.uw.edu/courses/1860120/files/folder/Lab/Lab%20Slides
       - title: "Midterm (In Class)"
