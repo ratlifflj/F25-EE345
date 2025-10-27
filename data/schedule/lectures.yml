@@ -111,7 +111,7 @@ schedule:
             pdf: /lectures/F25EE345_Lecture_9__20251022_M2-L3-filled.pdf
           video:
             recording: https://washington.zoom.us/rec/share/ZJ1yBYvGqt1R53lBhEepIp85Q8B-mAqttlRtusjWd3r3VNv8pRdI0HlSZzORu43c.dwSlQRBq0eeufd4M
-      - title: "Linear Models V"
+      - title: "Linear Models V: Least Squares"
         resources:
           slides:
             pdf: /lectures/F25EE345_Lecture_9_skeleton.pdf
@@ -120,7 +120,7 @@ schedule:
           typeset:
             pdf: /lectures/F25EE345_Lecture_8-10_filled.pdf
           video:
-            recording: 
+            recording: https://washington.zoom.us/rec/share/JLatRp7-au0-NOio96ZVbctMaCQVtNrrsWx0tEPtAt1gUKcVFnL77hRHQ0zBQUy0.VQ2SNJ642_7-gcDw
       - title: "Midterm Review"
         resources:
           annotations:
