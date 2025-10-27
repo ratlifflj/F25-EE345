@@ -70,7 +70,7 @@ schedule:
           solutions:
             pdf: /exams/F25EE345_midterm_solutions.pdf
           resources:
-            recorded sec: /exams/midterm_review_10_24_recording.mp4
+            recorded sec: https://canvas.uw.edu/courses/1860120/files/folder/Lab/Lab%20Slides
       - title: "Midterm (In Class)"
         resources:
           resources:
