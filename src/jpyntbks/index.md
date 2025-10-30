@@ -26,13 +26,20 @@ In this lab, we implement the \(k\)-Nearest Neighbors (\(k\)-NN) algorithm from 
 
 ## Week 3: Least Squares
 
-This exercise is on least squares and has five parts.
+This series of Python exercises focuses on least squares regression.
 
 #### Python Notebooks
 - **Template**: [W3 template notebook](/F25-EE345/jpyntbks/W3_M2_N1_LeastSquares_Template.ipynb)
 - **Solutions**: [W3 solutions notebook](/F25-EE345/jpyntbks/W3_M2_N1_LeastSquares_Solutions.ipynb)
 
 
+## Week 6: Kernel Methods & Gradient Descent
+
+The focus of this set of Python exercises is on extending the linear modeling we have done to the use of kernels, and optimization via (stochastic) gradient descent, a core technique in ML.
+
+#### Python Notebooks
+- **Template**:
+- **Solutions**:
 
 !!! info
     Most content on this website is intended as **high-level instructions** for each notebook.
