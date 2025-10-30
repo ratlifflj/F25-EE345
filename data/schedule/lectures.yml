@@ -124,7 +124,19 @@ schedule:
       - title: "Midterm Review"
         resources:
           annotations:
-            pdf:   
+            pdf: /exams/F25EE345_midterm_practice_solns.pdf 
           video:
-            recording:          
+            recording: https://washington.zoom.us/rec/share/LtNExBfHEKfEBO8xSXvqHmU754CB3kd6i8Vbbu6lFmP5bFmqZGpXIjNxJwEz3kZr.KLJYo2L-aua6G00c?startTime=1761759267000
+      - title: 'Gradient Descent & Kernel Methods'        
+        resources:
+          annotations:
+            pdf: 
+          video:
+            recording: 
+      - title: 'Gradient Descent & Kernel Methods'        
+        resources:
+          annotations:
+            pdf: 
+          video:
+            recording: 
 
