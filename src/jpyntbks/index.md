@@ -29,8 +29,8 @@ In this lab, we implement the \(k\)-Nearest Neighbors (\(k\)-NN) algorithm from 
 This exercise is on least squares and has five parts.
 
 #### Python Notebooks
-- **Template**: [W3 template notebook](/F25-EE345/jpyntbks/W2_M2_N1_LeastSquares_Template.ipynb)
-- **Solutions**: [W3 solutions notebook](/F25-EE345/jpyntbks/W2_M2_N1_LeastSquares_Solutions.ipynb)
+- **Template**: [W3 template notebook](/F25-EE345/jpyntbks/W3_M2_N1_LeastSquares_Template.ipynb)
+- **Solutions**: [W3 solutions notebook](/F25-EE345/jpyntbks/W3_M2_N1_LeastSquares_Solutions.ipynb)
 
 
 
