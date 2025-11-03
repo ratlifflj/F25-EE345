@@ -127,8 +127,10 @@ schedule:
             pdf: /exams/F25EE345_midterm_practice_solns.pdf 
           video:
             recording: https://washington.zoom.us/rec/share/LtNExBfHEKfEBO8xSXvqHmU754CB3kd6i8Vbbu6lFmP5bFmqZGpXIjNxJwEz3kZr.KLJYo2L-aua6G00c?startTime=1761759267000
-      - title: 'Gradient Descent & Kernel Methods'        
+      - title: 'Overparameterization \& Intro to Regularization'        
         resources:
+          slides:
+            pdf: /lectures/F25EE345_M2-L4_skeleton.pdf
           annotations:
             pdf: 
           video:
