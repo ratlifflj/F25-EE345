@@ -74,4 +74,8 @@ schedule:
       - title: "Midterm (In Class)"
         resources:
           resources:
-            recorded sec: TBA
+            recorded sec: 
+      - title: "No Class"
+        resources:
+          resources:
+            recorded sec: 
