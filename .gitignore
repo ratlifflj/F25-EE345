@@ -11,3 +11,4 @@ package.json
 
 # Plugin initialization file
 plugins/__init__.py
+lab_code/clustered_prompts_no_top_prompts_k*.csv
