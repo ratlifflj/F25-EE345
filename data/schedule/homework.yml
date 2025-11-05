@@ -19,3 +19,6 @@ schedule:
       - title: Homework 4
         start: 2025-10-22
         end: 2025-10-29
+      - title: Homework 5
+        start: 2025-10-29
+        end: 2025-11-12
