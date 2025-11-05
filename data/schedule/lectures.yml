@@ -127,12 +127,20 @@ schedule:
             pdf: /exams/F25EE345_midterm_practice_solns.pdf 
           video:
             recording: https://washington.zoom.us/rec/share/LtNExBfHEKfEBO8xSXvqHmU754CB3kd6i8Vbbu6lFmP5bFmqZGpXIjNxJwEz3kZr.KLJYo2L-aua6G00c?startTime=1761759267000
-      - title: 'Overparameterization & Intro to Regularization'        
+      - title: 'Minimum Norm Solution & Equivalence'        
         resources:
           slides:
             pdf: /lectures/F25EE345_M2-L4_skeleton.pdf
           annotations:
-            pdf: 
+            pdf: /lectures/F25EE345_M2-L4_and_M3-L1_annotated.pdf 
+          video:
+            recording: https://washington.zoom.us/rec/share/_tqlAAIaLFdHMKXLdTZw516anmmpUpUf0iBnqx7xQPiOoTb1hAYZp1co_v3fqFSN.SbGuRKj6KjybnVMY?startTime=1762192881000
+      - title: 'Overparameterization & Regularization'        
+        resources:
+          slides:
+            pdf: /lectures/F25EE345_M2-L4_skeleton.pdf
+          annotations:
+            pdf: /lectures/F25EE345_M2-L4_and_M3-L1_annotated.pdf  
           video:
             recording: 
       - title: 'Gradient Descent & Kernel Methods'        
