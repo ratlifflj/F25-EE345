@@ -31,9 +31,9 @@ nav_order: 3
 
 ### **HW 5** (Due Wed, Nov 12 11:59pm PDT)
 
-- Link to PDF: [hw4.pdf](/F25-EE345/homework/hw5.pdf)
-- Submit to Canvas by 2025-11-12: [assignment link]()
-- Submit self-grade quiz on Canvas by 2025-11-3: [self-grade quiz]()
+- Link to PDF: [hw5.pdf](/F25-EE345/homework/hw5.pdf)
+- Submit to Canvas by 2025-11-12: [assignment link](https://canvas.uw.edu/courses/1860120/assignments/10824673)
+- Submit self-grade quiz on Canvas by 2025-11-18: [self-grade quiz]()
 
 
 ## Self-Assessment
