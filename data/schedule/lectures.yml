@@ -142,7 +142,7 @@ schedule:
           annotations:
             pdf: /lectures/F25EE345_M2-L4_and_M3-L1_annotated.pdf  
           video:
-            recording: 
+            recording: https://washington.zoom.us/rec/share/wGMbRLuF36rrP5T4t4lLZJblecIAVROIs5H9aIMfodhMrwAHpZmyI2T2MJct3S4R.2pFmjQEUfuzqJtK1?startTime=1762365380000
       - title: 'Gradient Descent & Kernel Methods'        
         resources:
           annotations:
