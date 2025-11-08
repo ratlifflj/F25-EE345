@@ -144,6 +144,8 @@ schedule:
           video:
             recording: https://washington.zoom.us/rec/share/wGMbRLuF36rrP5T4t4lLZJblecIAVROIs5H9aIMfodhMrwAHpZmyI2T2MJct3S4R.2pFmjQEUfuzqJtK1?startTime=1762365380000
           video:
+            recording: https://washington.zoom.us/rec/share/Q1qo9w6J3GZNX7fgRCtCkpIVlngvoOl-QGizVD6RlBFz8_df2RwxaQT65OFq2ODM.rxeg_iFsWG3CEV09?startTime=1762365864000
+          video:
             recording: https://washington.zoom.us/rec/share/Q1qo9w6J3GZNX7fgRCtCkpIVlngvoOl-QGizVD6RlBFz8_df2RwxaQT65OFq2ODM.rxeg_iFsWG3CEV09?startTime=1762366427000
       - title: 'Gradient Descent & Kernel Methods'        
         resources:
