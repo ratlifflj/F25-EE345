@@ -52,3 +52,7 @@ schedule:
         url: https://washington.zoom.us/rec/share/Q1qo9w6J3GZNX7fgRCtCkpIVlngvoOl-QGizVD6RlBFz8_df2RwxaQT65OFq2ODM.rxeg_iFsWG3CEV09?startTime=1762366427000
         start: 2025-11-04
         end: 2025-11-09
+      - title: Mod 3: Gradient Descent & Regularization
+        url: https://washington.zoom.us/rec/share/H5Aga60Mw8hK418SxHHl3NMjCIjwSbR3If3qZbQmV2GnVYVBXf8ojAl4P-LqipCh.CsTBtkhjUxVAaVwW?startTime=1762797510000
+        start: 2025-11-09
+        end: 2025-11-11
