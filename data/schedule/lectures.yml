@@ -158,7 +158,7 @@ schedule:
           slides:
             pdf: /lectures/F25EE345_M3-L1_skeleton.pdf
           annotations:
-            pdf: /lectures/F25EE345_M3-L1_20251110_Annotated.pdf 
+            pdf: /lectures/F25EE345_M3-L1_20251110_Annotations.pdf 
           video:
             recording: https://washington.zoom.us/rec/share/H5Aga60Mw8hK418SxHHl3NMjCIjwSbR3If3qZbQmV2GnVYVBXf8ojAl4P-LqipCh.CsTBtkhjUxVAaVwW?startTime=1762797510000
       - title: 'Mod3: Implicit Regularization'        
@@ -166,7 +166,7 @@ schedule:
           slides:
             pdf: /lectures/F25EE345_M3-L2_skeleton.pdf
           annotations:
-            pdf: /lectures/F25EE345_M3-L2-20251112-annotations.pdf
+            pdf: /lectures/F25EE345_M3-L2_20251112-annotations.pdf
           video:
             recording: 
       - title: 'Mod3: Kernel Methods'        
