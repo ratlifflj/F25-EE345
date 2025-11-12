@@ -164,7 +164,7 @@ schedule:
       - title: 'Mod3: Implicit Regularization'        
         resources:
           slides:
-            pdf: /lectures/F25EE345_M3-L2_skeleton.pdf
+            pdf: /lectures/F25EE345_M3-L1_skeleton.pdf
           annotations:
             pdf: /lectures/F25EE345_M3-L2_20251112-annotations.pdf
           video:
