@@ -159,7 +159,6 @@ schedule:
         resources:
           slides:
             pdf: /lectures/F25EE345_M3-L2_skeleton.pdf
-          typeset:
             pdf: /lectures/F25EE345_M3-L4_skeleton.pdf
           annotations:
             pdf:
