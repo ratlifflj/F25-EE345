@@ -12,6 +12,12 @@ schedule:
           typeset: /lectures/F25EE345_Lecture_{num}_{date}_typeset.pdf
   styles:
     resources:
+      extra-slides:
+        resource-links:
+          - btn-group
+        resource-link:
+          - btn
+          - btn-resource
       slides:
         resource-links:
           - btn-group
@@ -159,6 +165,7 @@ schedule:
         resources:
           slides:
             pdf: /lectures/F25EE345_M3-L2_skeleton.pdf
+          extra-slides:
             pdf: /lectures/F25EE345_M3-L4_skeleton.pdf
           annotations:
             pdf:
