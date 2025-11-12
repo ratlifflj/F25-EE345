@@ -78,4 +78,8 @@ schedule:
       - title: "No Class"
         resources:
           resources:
-            recorded sec: 
+            recorded sec:
+      - title: "Guest Speaker: Mudit Agarwal, Amazon Robotics"
+        resources:
+          resources:
+            slides:
