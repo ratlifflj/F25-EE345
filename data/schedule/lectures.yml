@@ -168,7 +168,7 @@ schedule:
           annotations:
             pdf: /lectures/F25EE345_M3-L2_20251112-annotations.pdf
           video:
-            recording: 
+            recording: https://washington.zoom.us/rec/share/FkjchAGNB7rb4TZHU0m3XXXhApZAemIyR9ib6y-z8L7foFMZeXyE9pIlrwj7J7GU.c9P0C29Fr_btfp0g?startTime=1762970296000
       - title: 'Mod3: Kernel Methods'        
         resources:
           slides:
