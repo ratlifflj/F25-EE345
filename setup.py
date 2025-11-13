@@ -1,7 +1,9 @@
 from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='mkdocs-cse373-custom-plugins',
+    packages=find_packages(),
     entry_points={
         'mkdocs.plugins': [
             'collections = plugins.collections:CollectionsPlugin',
