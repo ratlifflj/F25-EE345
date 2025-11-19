@@ -25,3 +25,6 @@ schedule:
       - title: Homework 6
         start: 2025-11-12
         end: 2025-11-19
+      - title: Homework 7
+        start: 2025-11-19
+        end: 2025-12-02
