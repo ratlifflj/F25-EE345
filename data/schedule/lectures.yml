@@ -176,4 +176,12 @@ schedule:
           annotations:
             pdf: 
           video:
-            recording: 
+            recording:
+      - title: 'Mod3: Representer Theorem'        
+        resources:
+          slides:
+            pdf: /lectures/F25EE345_M3-L5_skeleton.pdf
+          annotations:
+            pdf: 
+          video:
+            recording:  
