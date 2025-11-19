@@ -83,3 +83,7 @@ schedule:
         resources:
           resources:
             slides:
+      - title: "Feature Analysis: LLM Example"
+        resources:
+          resources:
+            slides:
