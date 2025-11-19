@@ -31,3 +31,4 @@ six
 termcolor
 tornado
 tqdm
+markdown-katex
