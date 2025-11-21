@@ -185,3 +185,35 @@ schedule:
             pdf: /lectures/F25EE345_M3-L5_all.pdf 
           video:
             recording:  https://washington.zoom.us/rec/share/0rzuUkb-Q26XhOXU9cb_mtpBfF_r75gdPfBLGCmg_larGzQGQAVChG3N4vaXb19K.c7ToZhL56KjEdNC4?startTime=1763575245000
+      - title: 'Mod4: Logistic Regression I'        
+        resources:
+          slides:
+            pdf: 
+          annotations:
+            pdf: 
+          video:
+            recording:
+      - title: 'Mod4: Logistic Regression II'        
+        resources:
+          slides:
+            pdf: 
+          annotations:
+            pdf: 
+          video:
+            recording:
+      - title: 'Summary & Review:  Modern ML Connections'        
+        resources:
+          slides:
+            pdf: 
+          annotations:
+            pdf: 
+          video:
+            recording:
+      - title: 'Final Exam Review: Example Problems'        
+        resources:
+          slides:
+            pdf: 
+          annotations:
+            pdf: 
+          video:
+            recording:
