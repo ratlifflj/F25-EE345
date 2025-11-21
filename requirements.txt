@@ -2,7 +2,7 @@ mkdocs>=1.6
 mkdocs-material>=9.5
 click
 future
-htmlmin
+htmlmin2
 Jinja2
 joblib
 jsmin

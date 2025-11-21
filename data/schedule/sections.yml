@@ -82,8 +82,6 @@ schedule:
       - title: "Guest Speaker: Mudit Agarwal, Amazon Robotics"
         resources:
           resources:
-            slides:
       - title: "Feature Analysis: LLM Example"
         resources:
           resources:
-            slides:
