@@ -40,7 +40,7 @@ nav_order: 3
 
 - Link to PDF: [hw6.pdf](/F25-EE345/homework/hw6.pdf)
 - Submit to Canvas by 2025-11-19: [assignment link](https://canvas.uw.edu/courses/1860120/assignments/10837051)
-- Submit self-grade quiz on Canvas by 2025-11-24: [self-grade quiz]()
+- Submit self-grade quiz on Canvas by 2025-11-24: [self-grade quiz](https://canvas.uw.edu/courses/1860120/quizzes/2294115)
 
 
 ### **HW 7** (Due Wed, Dec 1 11:59pm PDT)
