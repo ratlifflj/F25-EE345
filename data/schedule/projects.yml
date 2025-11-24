@@ -64,3 +64,7 @@ schedule:
         url: https://washington.zoom.us/rec/share/0rzuUkb-Q26XhOXU9cb_mtpBfF_r75gdPfBLGCmg_larGzQGQAVChG3N4vaXb19K.c7ToZhL56KjEdNC4?startTime=1763575245000
         start: 2025-11-17
         end: 2025-11-20
+      - title: Mod4-L1 Logistic Regression I
+        url: https://washington.zoom.us/rec/share/TfmFMSuAygcEvy_GpIysa4cZT_-Cvoi4ozcBjJ33S6cYZqDkHTLk5gfKqkE1Jl1r.1cv70QG1y6rXDEUq?startTime=1764007167000
+        start: 2025-11-20
+        end: 2025-11-25

@@ -190,9 +190,9 @@ schedule:
           slides:
             pdf: /lectures/F25EE345_M4-L1_skeleton.pdf
           annotations:
-            pdf: 
+            pdf: /lectures/F25EE345_M4-L1_20251124_annotations.pdf
           video:
-            recording:
+            recording: https://washington.zoom.us/rec/share/TfmFMSuAygcEvy_GpIysa4cZT_-Cvoi4ozcBjJ33S6cYZqDkHTLk5gfKqkE1Jl1r.1cv70QG1y6rXDEUq?startTime=1764007167000
       - title: 'Mod4: Logistic Regression II'        
         resources:
           slides:
