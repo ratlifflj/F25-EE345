@@ -188,7 +188,7 @@ schedule:
       - title: 'Mod4: Logistic Regression I'        
         resources:
           slides:
-            pdf: 
+            pdf: /lectures/F25EE345_M4-L1_skeleton.pdf
           annotations:
             pdf: 
           video:
