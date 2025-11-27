@@ -198,9 +198,11 @@ schedule:
           slides:
             pdf: /lectures/F25EE345_M4-L2_skeleton.pdf
           annotations:
-            pdf: 
+            pdf: /lectures/F25EE345_M4-L2_all.pdf 
+          typeset:
+            pdf: /lectures/F25EE345_M4-L1_all.pdf
           video:
-            recording:
+            recording: https://washington.zoom.us/rec/share/oZeqCr180bULmL0ob7xn5tb6Zkkn3PFGB5oPQLLWL8y02VDYqSTJxpy124G49JMk.o6ZqbXdtC-XHxY3n?startTime=1764179953000
       - title: 'Summary & Review:  Modern ML Connections'        
         resources:
           slides:
