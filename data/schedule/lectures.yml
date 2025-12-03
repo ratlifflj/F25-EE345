@@ -210,11 +210,11 @@ schedule:
           annotations:
             pdf: /lectures/F25EE345_M4-L2_all.pdf 
           video:
-            recording:
+            recording: https://washington.zoom.us/rec/share/YAkc1HAudJQ3L9U4zd3j4Gs56IIGXunidyE0-X3bYJ9fF2bxUhNsnSOd5LC4a_Ep.9hEWY_dI-7rPsXWl?startTime=1764612030000
       - title: 'Final Exam Review: Example Problems'        
         resources:
           slides:
-            pdf: 
+            pdf: /lectures/F25EE345_final_practice.pdf
           annotations:
             pdf: 
           video:
