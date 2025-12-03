@@ -214,7 +214,7 @@ schedule:
       - title: 'Final Exam Review: Example Problems'        
         resources:
           slides:
-            pdf: /lectures/F25EE345_final_practice.pdf
+            pdf: /lectures/F25EE345_final_practice_skeleton.pdf
           annotations:
             pdf: 
           video:
