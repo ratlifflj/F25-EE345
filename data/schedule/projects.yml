@@ -68,7 +68,15 @@ schedule:
         url: https://washington.zoom.us/rec/share/TfmFMSuAygcEvy_GpIysa4cZT_-Cvoi4ozcBjJ33S6cYZqDkHTLk5gfKqkE1Jl1r.1cv70QG1y6rXDEUq?startTime=1764007167000
         start: 2025-11-20
         end: 2025-11-25
-      - title: Mod4-L2 Error Metrics & Model Selection
+      - title: Mod4-L3 Logistic Regression II
         url: https://washington.zoom.us/rec/share/oZeqCr180bULmL0ob7xn5tb6Zkkn3PFGB5oPQLLWL8y02VDYqSTJxpy124G49JMk.o6ZqbXdtC-XHxY3n?startTime=1764179953000
         start: 2025-11-25
         end: 2025-11-28
+      - title: Mod4-L2 Error Metrics & Model Selection
+        url: https://washington.zoom.us/rec/share/YC4o13nRUm28MYxcctjPnyu3L-pngZEU8cfZtVzeHhC11Fnnw5vrI9WJf2R1cPUj.eWUKT6DdQkO1drjI?startTime=1764612030000
+        start: 2025-11-28
+        end: 2025-12-02
+      - title: Final Exam Review: Example Problems
+        url: https://washington.zoom.us/rec/share/aNwnGI_YUWnsg7ClIgkNSmtXsUaeRNRmDm7PvdKnw6sNAeB3mTZXWWvVxgWa5iW9.2JAX9x_iNy4RfFce?startTime=1764784641000
+        start: 2025-12-02
+        end: 2025-12-05
